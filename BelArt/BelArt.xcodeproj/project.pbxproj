@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09841A5C85E4004D4134 /* AppDelegate.swift */; };
-		FBFB09871A5C85E4004D4134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09861A5C85E4004D4134 /* ViewController.swift */; };
 		FBFB098A1A5C85E4004D4134 /* BelArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */; };
 		FBFB098C1A5C85E4004D4134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098B1A5C85E4004D4134 /* Images.xcassets */; };
 		FBFB098F1A5C85E4004D4134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098D1A5C85E4004D4134 /* Main.storyboard */; };
 		FBFB099B1A5C85E5004D4134 /* BelArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB099A1A5C85E5004D4134 /* BelArtTests.swift */; };
+		FBFB09A61A5C9E5E004D4134 /* FournisseursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09A51A5C9E5E004D4134 /* FournisseursViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		FBFB097F1A5C85E4004D4134 /* BelArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFB09831A5C85E4004D4134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBFB09841A5C85E4004D4134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBFB09861A5C85E4004D4134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBFB09891A5C85E4004D4134 /* BelArt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BelArt.xcdatamodel; sourceTree = "<group>"; };
 		FBFB098B1A5C85E4004D4134 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FBFB098E1A5C85E4004D4134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBFB09941A5C85E4004D4134 /* BelArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFB09991A5C85E5004D4134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBFB099A1A5C85E5004D4134 /* BelArtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelArtTests.swift; sourceTree = "<group>"; };
+		FBFB09A51A5C9E5E004D4134 /* FournisseursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FournisseursViewController.swift; path = Controllers/FournisseursViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		FBFB09811A5C85E4004D4134 /* BelArt */ = {
 			isa = PBXGroup;
 			children = (
+				FBFB09A41A5C9E3C004D4134 /* Controllers */,
 				FBFB09841A5C85E4004D4134 /* AppDelegate.swift */,
-				FBFB09861A5C85E4004D4134 /* ViewController.swift */,
 				FBFB098B1A5C85E4004D4134 /* Images.xcassets */,
 				FBFB098D1A5C85E4004D4134 /* Main.storyboard */,
 				FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */,
@@ -110,6 +110,14 @@
 				FBFB09991A5C85E5004D4134 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBFB09A41A5C9E3C004D4134 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB09A51A5C9E5E004D4134 /* FournisseursViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFB09871A5C85E4004D4134 /* ViewController.swift in Sources */,
 				FBFB098A1A5C85E4004D4134 /* BelArt.xcdatamodeld in Sources */,
+				FBFB09A61A5C9E5E004D4134 /* FournisseursViewController.swift in Sources */,
 				FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +409,7 @@
 				FBFB09A01A5C85E5004D4134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBFB09A11A5C85E5004D4134 /* Build configuration list for PBXNativeTarget "BelArtTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +418,7 @@
 				FBFB09A31A5C85E5004D4134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

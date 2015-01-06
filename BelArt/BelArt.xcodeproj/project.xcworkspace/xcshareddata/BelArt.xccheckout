@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F5BF0DC3-F42A-4E1D-BEA5-3AE746112595</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BelArt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FBED285279D405EA9E1C77D4CABBE5CE52B5B0D0</key>
+		<string>https://github.com/MehdiSv/BelArt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BelArt/BelArt.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FBED285279D405EA9E1C77D4CABBE5CE52B5B0D0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MehdiSv/BelArt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FBED285279D405EA9E1C77D4CABBE5CE52B5B0D0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FBED285279D405EA9E1C77D4CABBE5CE52B5B0D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BelArt</string>
+		</dict>
+	</array>
+</dict>
+</plist>
