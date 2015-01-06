@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09841A5C85E4004D4134 /* AppDelegate.swift */; };
+		FBFB09871A5C85E4004D4134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09861A5C85E4004D4134 /* ViewController.swift */; };
+		FBFB098A1A5C85E4004D4134 /* BelArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */; };
+		FBFB098C1A5C85E4004D4134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098B1A5C85E4004D4134 /* Images.xcassets */; };
+		FBFB098F1A5C85E4004D4134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098D1A5C85E4004D4134 /* Main.storyboard */; };
+		FBFB099B1A5C85E5004D4134 /* BelArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB099A1A5C85E5004D4134 /* BelArtTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBFB09951A5C85E5004D4134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFB09771A5C85E4004D4134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBFB097E1A5C85E4004D4134;
+			remoteInfo = BelArt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBFB097F1A5C85E4004D4134 /* BelArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFB09831A5C85E4004D4134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFB09841A5C85E4004D4134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBFB09861A5C85E4004D4134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBFB09891A5C85E4004D4134 /* BelArt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BelArt.xcdatamodel; sourceTree = "<group>"; };
+		FBFB098B1A5C85E4004D4134 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBFB098E1A5C85E4004D4134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBFB09941A5C85E4004D4134 /* BelArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFB09991A5C85E5004D4134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFB099A1A5C85E5004D4134 /* BelArtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelArtTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBFB097C1A5C85E4004D4134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFB09911A5C85E4004D4134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBFB09761A5C85E4004D4134 = {
+			isa = PBXGroup;
+			children = (
+				FBFB09811A5C85E4004D4134 /* BelArt */,
+				FBFB09971A5C85E5004D4134 /* BelArtTests */,
+				FBFB09801A5C85E4004D4134 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBFB09801A5C85E4004D4134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB097F1A5C85E4004D4134 /* BelArt.app */,
+				FBFB09941A5C85E4004D4134 /* BelArtTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBFB09811A5C85E4004D4134 /* BelArt */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB09841A5C85E4004D4134 /* AppDelegate.swift */,
+				FBFB09861A5C85E4004D4134 /* ViewController.swift */,
+				FBFB098B1A5C85E4004D4134 /* Images.xcassets */,
+				FBFB098D1A5C85E4004D4134 /* Main.storyboard */,
+				FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */,
+				FBFB09821A5C85E4004D4134 /* Supporting Files */,
+			);
+			path = BelArt;
+			sourceTree = "<group>";
+		};
+		FBFB09821A5C85E4004D4134 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB09831A5C85E4004D4134 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBFB09971A5C85E5004D4134 /* BelArtTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB099A1A5C85E5004D4134 /* BelArtTests.swift */,
+				FBFB09981A5C85E5004D4134 /* Supporting Files */,
+			);
+			path = BelArtTests;
+			sourceTree = "<group>";
+		};
+		FBFB09981A5C85E5004D4134 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB09991A5C85E5004D4134 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBFB097E1A5C85E4004D4134 /* BelArt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFB099E1A5C85E5004D4134 /* Build configuration list for PBXNativeTarget "BelArt" */;
+			buildPhases = (
+				FBFB097B1A5C85E4004D4134 /* Sources */,
+				FBFB097C1A5C85E4004D4134 /* Frameworks */,
+				FBFB097D1A5C85E4004D4134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BelArt;
+			productName = BelArt;
+			productReference = FBFB097F1A5C85E4004D4134 /* BelArt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBFB09931A5C85E4004D4134 /* BelArtTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFB09A11A5C85E5004D4134 /* Build configuration list for PBXNativeTarget "BelArtTests" */;
+			buildPhases = (
+				FBFB09901A5C85E4004D4134 /* Sources */,
+				FBFB09911A5C85E4004D4134 /* Frameworks */,
+				FBFB09921A5C85E4004D4134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBFB09961A5C85E5004D4134 /* PBXTargetDependency */,
+			);
+			name = BelArtTests;
+			productName = BelArtTests;
+			productReference = FBFB09941A5C85E4004D4134 /* BelArtTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBFB09771A5C85E4004D4134 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mehdi Sqalli";
+				TargetAttributes = {
+					FBFB097E1A5C85E4004D4134 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FBFB09931A5C85E4004D4134 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FBFB097E1A5C85E4004D4134;
+					};
+				};
+			};
+			buildConfigurationList = FBFB097A1A5C85E4004D4134 /* Build configuration list for PBXProject "BelArt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBFB09761A5C85E4004D4134;
+			productRefGroup = FBFB09801A5C85E4004D4134 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBFB097E1A5C85E4004D4134 /* BelArt */,
+				FBFB09931A5C85E4004D4134 /* BelArtTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBFB097D1A5C85E4004D4134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFB098C1A5C85E4004D4134 /* Images.xcassets in Resources */,
+				FBFB098F1A5C85E4004D4134 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFB09921A5C85E4004D4134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBFB097B1A5C85E4004D4134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFB09871A5C85E4004D4134 /* ViewController.swift in Sources */,
+				FBFB098A1A5C85E4004D4134 /* BelArt.xcdatamodeld in Sources */,
+				FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFB09901A5C85E4004D4134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFB099B1A5C85E5004D4134 /* BelArtTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBFB09961A5C85E5004D4134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBFB097E1A5C85E4004D4134 /* BelArt */;
+			targetProxy = FBFB09951A5C85E5004D4134 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBFB098D1A5C85E4004D4134 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFB098E1A5C85E4004D4134 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBFB099C1A5C85E5004D4134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBFB099D1A5C85E5004D4134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBFB099F1A5C85E5004D4134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BelArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBFB09A01A5C85E5004D4134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BelArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBFB09A21A5C85E5004D4134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BelArtTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BelArt.app/Contents/MacOS/BelArt";
+			};
+			name = Debug;
+		};
+		FBFB09A31A5C85E5004D4134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BelArtTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BelArt.app/Contents/MacOS/BelArt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBFB097A1A5C85E4004D4134 /* Build configuration list for PBXProject "BelArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFB099C1A5C85E5004D4134 /* Debug */,
+				FBFB099D1A5C85E5004D4134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFB099E1A5C85E5004D4134 /* Build configuration list for PBXNativeTarget "BelArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFB099F1A5C85E5004D4134 /* Debug */,
+				FBFB09A01A5C85E5004D4134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBFB09A11A5C85E5004D4134 /* Build configuration list for PBXNativeTarget "BelArtTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFB09A21A5C85E5004D4134 /* Debug */,
+				FBFB09A31A5C85E5004D4134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBFB09891A5C85E4004D4134 /* BelArt.xcdatamodel */,
+			);
+			currentVersion = FBFB09891A5C85E4004D4134 /* BelArt.xcdatamodel */;
+			path = BelArt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBFB09771A5C85E4004D4134 /* Project object */;
+}
