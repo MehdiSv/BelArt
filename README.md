@@ -1,4 +1,4 @@
 BelArt
 ======
 
-Mini ERP for jewelery
+Mini ERP for jewelery shop
