@@ -10,9 +10,34 @@ import Cocoa
 
 class BelArtViewController: NSViewController {
 
+    let alertInfo = NSAlert()
+    
+    let managedObjectContext = (NSApplication.sharedApplication().delegate as AppDelegate).managedObjectContext!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        alertInfo.addButtonWithTitle("OK")
+        alertInfo.alertStyle = NSAlertStyle.CriticalAlertStyle
+    }
+
+    func addInformationAlert(title:String) {
+    
+        alertInfo.messageText = title
+        
+        
+        alertInfo.runModal()
+    }
+
+    func saveContext() {
+        
+        var error:NSError?
+        
+        self.managedObjectContext.save(&error)
+        
+        if error != nil {
+            preconditionFailure(error!.description)
+        }
     }
     
 }

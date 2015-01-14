@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+@objc(Fournisseur)
 class Fournisseur: NSManagedObject {
 
     @NSManaged var prenom: String

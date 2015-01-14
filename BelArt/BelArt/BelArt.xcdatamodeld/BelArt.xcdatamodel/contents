@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Article" representedClassName="Article" syncable="YES">
+        <attribute name="nom" attributeType="String" syncable="YES"/>
+        <attribute name="prixAchat" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="prixGr" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="prixTotal" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="fournisseur" maxCount="1" deletionRule="Nullify" destinationEntity="Fournisseur" inverseName="articles" inverseEntity="Fournisseur" syncable="YES"/>
+    </entity>
+    <entity name="Fournisseur" representedClassName="Fournisseur" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nom" attributeType="String" syncable="YES"/>
+        <attribute name="prenom" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="articles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="fournisseur" inverseEntity="Article" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Fournisseur" positionX="-20" positionY="-9" width="128" height="118"/>
+        <element name="Article" positionX="-234" positionY="-9" width="128" height="118"/>
+    </elements>
 </model>

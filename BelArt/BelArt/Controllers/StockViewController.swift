@@ -1,14 +1,14 @@
 //
-//  AddFournisseurViewController.swift
+//  StockViewController.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 12/01/15.
+//  Created by Mehdi Sqalli on 14/01/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
 import Cocoa
 
-class AddFournisseurViewController: NSViewController {
+class StockViewController: BelArtViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

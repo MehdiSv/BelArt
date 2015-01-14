@@ -8,25 +8,14 @@
 
 import Cocoa
 
-class FournisseursViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate  {
-
-    @IBOutlet weak var tableView: NSTableView!
+class FournisseursViewController: BelArtViewController  {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        
+        // TODO : migration core data model -> Test!
+        // TODO : Put int into textfield through CoreData
+        // TODO : Connect relationship with NSArrayController
     }
-    
-    func numberOfRowsInTableView(aTableView: NSTableView!) -> Int
-    {
-        return 3
-    }
-    
-    func tableView(tableView: NSTableView, viewForTableColumn: NSTableColumn, row: Int) -> NSView
-    {
-        var cell = tableView.makeViewWithIdentifier("FournisseurCell", owner: self) as NSTableCellView
-        cell.textField!.stringValue = "Hey, this is a cell"
-        return cell;
-    }
-    
 }
