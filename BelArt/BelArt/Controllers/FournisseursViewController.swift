@@ -13,9 +13,7 @@ class FournisseursViewController: BelArtViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // TODO : Add Categories
         // TODO : migration core data model -> Test!
-        // TODO : Put int into textfield through CoreData
-        // TODO : Connect relationship with NSArrayController
     }
 }
