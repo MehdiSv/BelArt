@@ -217,12 +217,12 @@
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-7q-Y7u">
                                 <rect key="frame" x="20" y="76" width="485" height="320"/>
-                                <clipView key="contentView" id="csl-R7-BDW">
+                                <clipView key="contentView" misplaced="YES" id="csl-R7-BDW">
                                     <rect key="frame" x="1" y="0.0" width="238" height="134"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="cT0-1Y-n3Y" id="GEU-T9-mYF">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="483" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -242,7 +242,7 @@
                                                     <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="arrangedObjects"/>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <connections>
-                                                        <binding destination="CJ0-s4-JY1" name="value" keyPath="arrangedObjects.nom" id="8Yx-kb-oF3"/>
+                                                        <binding destination="CJ0-s4-JY1" name="value" keyPath="arrangedObjects.nom" id="qs8-KL-IH1"/>
                                                     </connections>
                                                 </tableColumn>
                                                 <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="mg8-nn-u7P">
@@ -262,7 +262,7 @@
                                                     </connections>
                                                 </tableColumn>
                                                 <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="5g0-u3-MSi">
-                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="PrixTotal">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="PrixAchat">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -274,11 +274,11 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <connections>
-                                                        <binding destination="CJ0-s4-JY1" name="value" keyPath="arrangedObjects.prixTotal" id="8Rp-8g-KJ0"/>
+                                                        <binding destination="CJ0-s4-JY1" name="value" keyPath="arrangedObjects.prixAchat" id="uZi-xp-Ybv"/>
                                                     </connections>
                                                 </tableColumn>
                                                 <tableColumn width="267" minWidth="10" maxWidth="3.4028234663852886e+38" id="KRj-j0-TvC">
-                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="PrixAchat">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Fournisseur">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -290,7 +290,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <connections>
-                                                        <binding destination="CJ0-s4-JY1" name="value" keyPath="arrangedObjects.prixAchat" id="X2b-63-dzT"/>
+                                                        <binding destination="CJ0-s4-JY1" name="value" keyPath="arrangedObjects.fournisseur.nom" id="Gl1-eN-X2B"/>
                                                     </connections>
                                                 </tableColumn>
                                             </tableColumns>
@@ -363,54 +363,21 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6gs-oa-Xf5">
-                                <rect key="frame" x="522" y="294" width="176" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="OrO-hB-7MF">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <binding destination="CJ0-s4-JY1" name="value" keyPath="selection.prixGr" id="37X-i3-zWQ"/>
-                                </connections>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7HA-Sb-y1w">
-                                <rect key="frame" x="520" y="269" width="58" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="PrixTotal" id="wWx-Xd-XeV">
+                                <rect key="frame" x="520" y="269" width="64" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="PrixAchat" id="wWx-Xd-XeV">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sdM-UN-pwH">
-                                <rect key="frame" x="522" y="239" width="176" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="fM5-zj-EHl">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <binding destination="CJ0-s4-JY1" name="value" keyPath="selection.prixTotal" id="4Wp-dg-haJ"/>
-                                </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uxc-rb-l7j">
-                                <rect key="frame" x="520" y="214" width="64" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="PrixAchat" id="XuJ-14-odu">
+                                <rect key="frame" x="520" y="214" width="77" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Fournisseur" id="XuJ-14-odu">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J5m-zM-wVP">
-                                <rect key="frame" x="522" y="184" width="176" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="dXP-9L-9TY">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <connections>
-                                    <binding destination="CJ0-s4-JY1" name="value" keyPath="selection.prixAchat" id="SUb-Ut-DBF"/>
-                                </connections>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="50w-oo-PM3">
                                 <rect key="frame" x="375" y="5" width="64" height="65"/>
@@ -440,52 +407,98 @@
                                     <action selector="remove:" target="CJ0-s4-JY1" id="ywL-R1-aAo"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="byR-yh-u2l">
+                                <rect key="frame" x="523" y="294" width="175" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="hnR-HB-kGk">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="0P5-K4-s8O"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="CJ0-s4-JY1" name="value" keyPath="selection.prixGr" id="49u-2d-NXK"/>
+                                </connections>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gw3-rj-quc">
+                                <rect key="frame" x="523" y="239" width="175" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cBh-Bv-PzN">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="KfI-sh-e2j"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="CJ0-s4-JY1" name="value" keyPath="selection.prixAchat" id="rxO-d1-tBA"/>
+                                </connections>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ooM-sU-a3i">
+                                <rect key="frame" x="521" y="182" width="180" height="26"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="rUL-Hv-aGW">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="BP9-TY-8Bu">
+                                        <items>
+                                            <menuItem title="Item 1" id="Yj0-bk-3TE"/>
+                                            <menuItem title="Item 2" id="OPJ-KK-ERC"/>
+                                            <menuItem title="Item 3" id="oec-pK-AEl"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <binding destination="4Lj-xp-Fma" name="content" keyPath="arrangedObjects" id="Hos-rp-AEg"/>
+                                    <binding destination="4Lj-xp-Fma" name="contentObjects" keyPath="arrangedObjects" previousBinding="Hos-rp-AEg" id="IFi-QL-fxy"/>
+                                    <binding destination="4Lj-xp-Fma" name="contentValues" keyPath="arrangedObjects.nom" previousBinding="IFi-QL-fxy" id="kMg-jQ-d4m"/>
+                                    <binding destination="CJ0-s4-JY1" name="selectedObject" keyPath="selection.fournisseur" previousBinding="kMg-jQ-d4m" id="gbb-Wo-ZMs"/>
+                                </connections>
+                            </popUpButton>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="leading" secondItem="cou-Qv-OtH" secondAttribute="leading" id="1GR-Ds-hfT"/>
+                            <constraint firstItem="7HA-Sb-y1w" firstAttribute="top" secondItem="byR-yh-u2l" secondAttribute="bottom" constant="8" id="1WR-CR-3Of"/>
                             <constraint firstItem="50w-oo-PM3" firstAttribute="top" secondItem="qOP-7q-Y7u" secondAttribute="bottom" constant="8" id="2CQ-YO-v0a"/>
                             <constraint firstItem="LOy-OJ-XpX" firstAttribute="top" secondItem="qOP-7q-Y7u" secondAttribute="bottom" constant="8" id="2eD-DX-xrg"/>
                             <constraint firstItem="50w-oo-PM3" firstAttribute="top" secondItem="qOP-7q-Y7u" secondAttribute="bottom" constant="8" id="3cp-vw-gtb"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="top" secondItem="mHU-dI-8Lm" secondAttribute="bottom" constant="8" id="4jF-X2-dMB"/>
+                            <constraint firstItem="ooM-sU-a3i" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="9" id="4u4-dN-wxu"/>
                             <constraint firstItem="LOy-OJ-XpX" firstAttribute="leading" secondItem="50w-oo-PM3" secondAttribute="trailing" constant="8" id="7qS-jq-Vpd"/>
                             <constraint firstItem="cou-Qv-OtH" firstAttribute="top" secondItem="Pry-ld-j68" secondAttribute="bottom" constant="8" id="9Mu-2H-6qe"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="leading" secondItem="uxc-rb-l7j" secondAttribute="leading" id="CPy-Hl-duP"/>
+                            <constraint firstItem="gw3-rj-quc" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="9" id="AyF-Ha-XfF"/>
                             <constraint firstItem="EEZ-lJ-TMv" firstAttribute="top" secondItem="JfX-pv-ql6" secondAttribute="top" constant="8" id="E48-6x-yyx"/>
+                            <constraint firstAttribute="trailing" secondItem="gw3-rj-quc" secondAttribute="trailing" constant="20" id="Hzb-Nc-Yqt"/>
                             <constraint firstAttribute="trailing" secondItem="cou-Qv-OtH" secondAttribute="trailing" constant="20" id="IxQ-bs-FcH"/>
+                            <constraint firstItem="mHU-dI-8Lm" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="8" id="J4U-H2-4KN"/>
                             <constraint firstItem="EEZ-lJ-TMv" firstAttribute="leading" secondItem="LOy-OJ-XpX" secondAttribute="trailing" constant="8" id="JLN-3v-dva"/>
                             <constraint firstItem="LOy-OJ-XpX" firstAttribute="leading" secondItem="50w-oo-PM3" secondAttribute="trailing" constant="8" id="Jdh-WK-eaG"/>
                             <constraint firstItem="mHU-dI-8Lm" firstAttribute="top" secondItem="cou-Qv-OtH" secondAttribute="bottom" constant="8" id="LWr-Kf-Bas"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="leading" secondItem="sdM-UN-pwH" secondAttribute="leading" id="SV7-cE-E7I"/>
+                            <constraint firstItem="Pry-ld-j68" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="8" id="Qpg-5d-xBI"/>
                             <constraint firstItem="qOP-7q-Y7u" firstAttribute="leading" secondItem="JfX-pv-ql6" secondAttribute="leading" constant="20" id="Sh3-7H-LFJ"/>
+                            <constraint firstAttribute="trailing" secondItem="byR-yh-u2l" secondAttribute="trailing" constant="20" id="Tm5-Aj-buO"/>
                             <constraint firstAttribute="bottom" secondItem="50w-oo-PM3" secondAttribute="bottom" constant="8" id="UfZ-hy-tLa"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="width" secondItem="J5m-zM-wVP" secondAttribute="width" id="VFV-sI-lS4"/>
-                            <constraint firstItem="J5m-zM-wVP" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="8" id="VdF-sH-dB9"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="height" secondItem="cou-Qv-OtH" secondAttribute="height" id="VhO-Rl-jxb"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="leading" secondItem="J5m-zM-wVP" secondAttribute="leading" id="Xj9-oF-6gi"/>
+                            <constraint firstItem="uxc-rb-l7j" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="8" id="Vwo-8n-mpp"/>
+                            <constraint firstItem="gw3-rj-quc" firstAttribute="top" secondItem="7HA-Sb-y1w" secondAttribute="bottom" constant="8" id="XVl-Ue-Tfo"/>
                             <constraint firstItem="cou-Qv-OtH" firstAttribute="top" secondItem="Pry-ld-j68" secondAttribute="bottom" constant="8" id="Xx1-Sk-4Ch"/>
+                            <constraint firstItem="byR-yh-u2l" firstAttribute="top" secondItem="mHU-dI-8Lm" secondAttribute="bottom" constant="8" id="bS4-tt-nVs"/>
                             <constraint firstItem="LOy-OJ-XpX" firstAttribute="top" secondItem="qOP-7q-Y7u" secondAttribute="bottom" constant="8" id="cQX-x7-EVR"/>
+                            <constraint firstItem="mHU-dI-8Lm" firstAttribute="top" secondItem="cou-Qv-OtH" secondAttribute="bottom" constant="8" id="cij-YZ-66O"/>
                             <constraint firstItem="cou-Qv-OtH" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="8" id="cjL-5Q-S8M"/>
-                            <constraint firstItem="uxc-rb-l7j" firstAttribute="top" secondItem="sdM-UN-pwH" secondAttribute="bottom" constant="8" id="eta-Ns-z6e"/>
+                            <constraint firstItem="ooM-sU-a3i" firstAttribute="top" secondItem="uxc-rb-l7j" secondAttribute="bottom" constant="8" id="dB7-CB-0El"/>
                             <constraint firstItem="EEZ-lJ-TMv" firstAttribute="leading" secondItem="LOy-OJ-XpX" secondAttribute="trailing" constant="8" id="gip-BP-gYH"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="leading" secondItem="7HA-Sb-y1w" secondAttribute="leading" id="hD1-s2-6ma"/>
-                            <constraint firstItem="sdM-UN-pwH" firstAttribute="top" secondItem="7HA-Sb-y1w" secondAttribute="bottom" constant="8" id="hLF-os-WRd"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="width" secondItem="sdM-UN-pwH" secondAttribute="width" id="hhE-d7-00v"/>
                             <constraint firstAttribute="bottom" secondItem="EEZ-lJ-TMv" secondAttribute="bottom" constant="8" id="irW-EM-6mf"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="leading" secondItem="Pry-ld-j68" secondAttribute="leading" id="l86-Ce-1eB"/>
+                            <constraint firstAttribute="trailing" secondItem="ooM-sU-a3i" secondAttribute="trailing" constant="20" id="l2u-pk-GDO"/>
                             <constraint firstItem="Pry-ld-j68" firstAttribute="top" secondItem="JfX-pv-ql6" secondAttribute="top" constant="16" id="mU6-Xe-QbA"/>
                             <constraint firstItem="EEZ-lJ-TMv" firstAttribute="leading" secondItem="qOP-7q-Y7u" secondAttribute="trailing" constant="8" id="np3-FK-bsn"/>
                             <constraint firstItem="qOP-7q-Y7u" firstAttribute="top" secondItem="JfX-pv-ql6" secondAttribute="top" constant="16" id="qca-vb-3DL"/>
-                            <constraint firstItem="J5m-zM-wVP" firstAttribute="top" secondItem="uxc-rb-l7j" secondAttribute="bottom" constant="8" id="tps-N3-JvL"/>
-                            <constraint firstItem="7HA-Sb-y1w" firstAttribute="top" secondItem="6gs-oa-Xf5" secondAttribute="bottom" constant="8" id="u1b-kj-NYX"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="height" secondItem="sdM-UN-pwH" secondAttribute="height" id="ue7-VJ-epC"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="leading" secondItem="mHU-dI-8Lm" secondAttribute="leading" id="vL9-6S-lTi"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="height" secondItem="J5m-zM-wVP" secondAttribute="height" id="yt8-y6-vOR"/>
-                            <constraint firstItem="6gs-oa-Xf5" firstAttribute="width" secondItem="cou-Qv-OtH" secondAttribute="width" id="zg6-KW-1IN"/>
+                            <constraint firstItem="7HA-Sb-y1w" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="8" id="tyu-gb-eHb"/>
+                            <constraint firstItem="uxc-rb-l7j" firstAttribute="top" secondItem="gw3-rj-quc" secondAttribute="bottom" constant="8" id="uja-hM-cby"/>
+                            <constraint firstItem="byR-yh-u2l" firstAttribute="leading" secondItem="EEZ-lJ-TMv" secondAttribute="trailing" constant="9" id="zXO-hK-V1L"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="yRN-3y-1ku" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <arrayController mode="entity" entityName="Article" automaticallyPreparesContent="YES" id="CJ0-s4-JY1" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
+                <arrayController mode="entity" entityName="Fournisseur" automaticallyPreparesContent="YES" id="4Lj-xp-Fma" userLabel="FournisseurArrayController">
+                    <connections>
+                        <binding destination="zkE-af-BIC" name="managedObjectContext" keyPath="managedObjectContext" id="8Nt-70-SUS"/>
+                    </connections>
+                </arrayController>
+                <arrayController mode="entity" entityName="Article" automaticallyPreparesContent="YES" id="CJ0-s4-JY1" userLabel="ArticleArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
                     <connections>
                         <binding destination="zkE-af-BIC" name="managedObjectContext" keyPath="managedObjectContext" id="K5G-lP-NQs"/>
                     </connections>
@@ -499,7 +512,7 @@
             <objects>
                 <customObject id="3xH-06-Uj5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="79T-j0-1j6"/>
-                <arrayController mode="entity" entityName="Fournisseur" automaticallyPreparesContent="YES" id="YG3-yk-n2U" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
+                <arrayController mode="entity" entityName="Fournisseur" automaticallyPreparesContent="YES" id="YG3-yk-n2U" userLabel="FournisseurArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
                     <connections>
                         <binding destination="IS2-53-iL9" name="managedObjectContext" keyPath="managedObjectContext" id="nTj-S6-ND4"/>
                     </connections>
@@ -516,7 +529,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="TqJ-Qv-nj3" id="VfF-wv-MVw">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="483" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -2,7 +2,7 @@
 //  Article.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 14/01/15.
+//  Created by Mehdi Sqalli on 17/01/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -13,8 +13,8 @@ import CoreData
 class Article: NSManagedObject {
 
     @NSManaged var nom: String
-    @NSManaged var prixGr: NSNumber
-    @NSManaged var prixTotal: NSNumber
     @NSManaged var prixAchat: NSNumber
+    @NSManaged var prixGr: NSNumber
+    @NSManaged var fournisseur: Fournisseur
 
 }

@@ -9,10 +9,9 @@
 import Cocoa
 
 class StockViewController: BelArtViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
     }
-    
+
 }
