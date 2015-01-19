@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class CategoryViewController: NSViewController {
+class CategoryViewController: BelArtViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

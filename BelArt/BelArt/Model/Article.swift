@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+@objc(Article)
 class Article: NSManagedObject {
 
     @NSManaged var nom: String
@@ -17,5 +18,25 @@ class Article: NSManagedObject {
     @NSManaged var poids: NSNumber
     @NSManaged var category: Category
     @NSManaged var fournisseur: Fournisseur
-
+    
+    class func keyPathsForValuesAffectingPrixTotal() -> NSArray {
+        return ["poids", "prixGr"]
+    }
+    
+    var prixTotal: NSNumber {
+        get {
+            
+            if prixAchat != 0 {
+                println("prixAchat = \(prixAchat)")
+                return prixAchat
+            }
+            println(prixGr.floatValue * poids.floatValue)
+            return prixGr.floatValue * poids.floatValue
+        }
+        
+        set {
+            println(newValue)
+            prixAchat = newValue
+        }
+    }
 }

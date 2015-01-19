@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91422B221A69E757003257E7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91422B211A69E757003257E7 /* Article.swift */; };
 		914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914567D81A63E25D00549AFB /* BelArtViewController.swift */; };
+		9159C2041A6B15B00061A8FC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C2031A6B15B00061A8FC /* Category.swift */; };
+		9159C2091A6B23130061A8FC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C2071A6B23130061A8FC /* CategoryViewController.swift */; };
+		9159C20E1A6B39570061A8FC /* BelArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9159C20C1A6B39570061A8FC /* BelArt.xcdatamodeld */; };
+		9159C2101A6B3BC00061A8FC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C20F1A6B3BC00061A8FC /* Article.swift */; };
 		9169DDC11A67248900E704A2 /* Fournisseur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169DDC01A67248900E704A2 /* Fournisseur.swift */; };
 		91752A971A66BD2200B6857E /* BelArtArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91752A961A66BD2200B6857E /* BelArtArrayController.swift */; };
 		91752A991A66C27600B6857E /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91752A981A66C27600B6857E /* StockViewController.swift */; };
 		FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09841A5C85E4004D4134 /* AppDelegate.swift */; };
-		FBFB098A1A5C85E4004D4134 /* BelArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */; };
 		FBFB098C1A5C85E4004D4134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098B1A5C85E4004D4134 /* Images.xcassets */; };
 		FBFB098F1A5C85E4004D4134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098D1A5C85E4004D4134 /* Main.storyboard */; };
 		FBFB099B1A5C85E5004D4134 /* BelArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB099A1A5C85E5004D4134 /* BelArtTests.swift */; };
@@ -31,15 +33,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		91422B211A69E757003257E7 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
 		914567D81A63E25D00549AFB /* BelArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BelArtViewController.swift; path = Controllers/BelArtViewController.swift; sourceTree = "<group>"; };
+		9159C2031A6B15B00061A8FC /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Model/Category.swift; sourceTree = "<group>"; };
+		9159C2071A6B23130061A8FC /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Controllers/CategoryViewController.swift; sourceTree = "<group>"; };
+		9159C20D1A6B39570061A8FC /* BelArt 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 3.xcdatamodel"; sourceTree = "<group>"; };
+		9159C20F1A6B3BC00061A8FC /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
 		9169DDC01A67248900E704A2 /* Fournisseur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fournisseur.swift; path = Model/Fournisseur.swift; sourceTree = "<group>"; };
 		91752A961A66BD2200B6857E /* BelArtArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BelArtArrayController.swift; path = Controllers/BelArtArrayController.swift; sourceTree = "<group>"; };
 		91752A981A66C27600B6857E /* StockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockViewController.swift; path = Controllers/StockViewController.swift; sourceTree = "<group>"; };
 		FBFB097F1A5C85E4004D4134 /* BelArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFB09831A5C85E4004D4134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBFB09841A5C85E4004D4134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBFB09891A5C85E4004D4134 /* BelArt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BelArt.xcdatamodel; sourceTree = "<group>"; };
 		FBFB098B1A5C85E4004D4134 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FBFB098E1A5C85E4004D4134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBFB09941A5C85E4004D4134 /* BelArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +73,8 @@
 		914567DC1A63F53700549AFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				91422B211A69E757003257E7 /* Article.swift */,
+				9159C20F1A6B3BC00061A8FC /* Article.swift */,
+				9159C2031A6B15B00061A8FC /* Category.swift */,
 				9169DDC01A67248900E704A2 /* Fournisseur.swift */,
 			);
 			name = Model;
@@ -96,12 +101,12 @@
 		FBFB09811A5C85E4004D4134 /* BelArt */ = {
 			isa = PBXGroup;
 			children = (
+				9159C20C1A6B39570061A8FC /* BelArt.xcdatamodeld */,
 				914567DC1A63F53700549AFB /* Model */,
 				FBFB09A41A5C9E3C004D4134 /* Controllers */,
 				FBFB09841A5C85E4004D4134 /* AppDelegate.swift */,
 				FBFB098B1A5C85E4004D4134 /* Images.xcassets */,
 				FBFB098D1A5C85E4004D4134 /* Main.storyboard */,
-				FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */,
 				FBFB09821A5C85E4004D4134 /* Supporting Files */,
 			);
 			path = BelArt;
@@ -139,6 +144,7 @@
 				914567D81A63E25D00549AFB /* BelArtViewController.swift */,
 				91752A961A66BD2200B6857E /* BelArtArrayController.swift */,
 				91752A981A66C27600B6857E /* StockViewController.swift */,
+				9159C2071A6B23130061A8FC /* CategoryViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -242,12 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFB098A1A5C85E4004D4134 /* BelArt.xcdatamodeld in Sources */,
+				9159C2091A6B23130061A8FC /* CategoryViewController.swift in Sources */,
 				91752A991A66C27600B6857E /* StockViewController.swift in Sources */,
 				914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */,
 				FBFB09A61A5C9E5E004D4134 /* FournisseursViewController.swift in Sources */,
-				91422B221A69E757003257E7 /* Article.swift in Sources */,
+				9159C2101A6B3BC00061A8FC /* Article.swift in Sources */,
+				9159C2041A6B15B00061A8FC /* Category.swift in Sources */,
 				91752A971A66BD2200B6857E /* BelArtArrayController.swift in Sources */,
+				9159C20E1A6B39570061A8FC /* BelArt.xcdatamodeld in Sources */,
 				FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */,
 				9169DDC11A67248900E704A2 /* Fournisseur.swift in Sources */,
 			);
@@ -451,12 +459,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FBFB09881A5C85E4004D4134 /* BelArt.xcdatamodeld */ = {
+		9159C20C1A6B39570061A8FC /* BelArt.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FBFB09891A5C85E4004D4134 /* BelArt.xcdatamodel */,
+				9159C20D1A6B39570061A8FC /* BelArt 3.xcdatamodel */,
 			);
-			currentVersion = FBFB09891A5C85E4004D4134 /* BelArt.xcdatamodel */;
+			currentVersion = 9159C20D1A6B39570061A8FC /* BelArt 3.xcdatamodel */;
 			path = BelArt.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
