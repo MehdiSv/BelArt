@@ -22,20 +22,22 @@ class Article: NSManagedObject {
     class func keyPathsForValuesAffectingPrixTotal() -> NSArray {
         return ["poids", "prixGr"]
     }
-    
+
+    class func keyPathsForValuesAffectingPrixGr() -> NSArray {
+        return ["prixAchat"]
+    }
+
     var prixTotal: NSNumber {
         get {
             
-            if prixAchat != 0 {
-                println("prixAchat = \(prixAchat)")
+            if prixGr == 0 {
                 return prixAchat
             }
-            println(prixGr.floatValue * poids.floatValue)
             return prixGr.floatValue * poids.floatValue
         }
         
         set {
-            println(newValue)
+            prixGr = 0
             prixAchat = newValue
         }
     }
