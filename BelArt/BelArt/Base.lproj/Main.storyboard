@@ -471,6 +471,7 @@
                         <tabViewItem id="cgA-9O-dlj"/>
                         <tabViewItem label="Clients" id="5xb-46-Knv"/>
                         <tabViewItem id="yK2-jE-QcH"/>
+                        <tabViewItem id="paC-VW-Tch"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="WLu-7q-qQA">
                         <rect key="frame" x="0.0" y="0.0" width="722" height="300"/>
@@ -484,6 +485,7 @@
                         <segue destination="IS2-53-iL9" kind="relationship" relationship="tabItems" id="Qdb-EA-RDy"/>
                         <segue destination="egW-4v-bMb" kind="relationship" relationship="tabItems" id="K8f-Ei-X4n"/>
                         <segue destination="dW3-Q1-1cR" kind="relationship" relationship="tabItems" id="Goy-fZ-t8W"/>
+                        <segue destination="wns-gc-0Gx" kind="relationship" relationship="tabItems" id="sLn-V7-YxA"/>
                     </connections>
                 </tabViewController>
                 <customObject id="EMk-pw-C6V" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -641,6 +643,24 @@
                 <userDefaultsController id="c2r-Ce-491"/>
             </objects>
             <point key="canvasLocation" x="-61.5" y="1408"/>
+        </scene>
+        <!--Moyens-->
+        <scene sceneID="sfB-ez-DgB">
+            <objects>
+                <viewController title="Moyens" id="wns-gc-0Gx" customClass="MoyensViewController" customModule="BelArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="79X-3L-98o">
+                        <rect key="frame" x="0.0" y="0.0" width="839" height="405"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="jLk-M4-E8s" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController mode="entity" entityName="Moyen" automaticallyPreparesContent="YES" id="6C6-DS-rq8" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
+                    <connections>
+                        <binding destination="wns-gc-0Gx" name="managedObjectContext" keyPath="managedObjectContext" id="jRC-uI-ofZ"/>
+                    </connections>
+                </arrayController>
+            </objects>
+            <point key="canvasLocation" x="-61.5" y="1931.5"/>
         </scene>
         <!--Stock-->
         <scene sceneID="XTJ-2D-sfe">
@@ -1319,16 +1339,17 @@
             </objects>
             <point key="canvasLocation" x="1077" y="984"/>
         </scene>
-        <!--View Controller-->
+        <!--Achats View Controller-->
         <scene sceneID="K2z-m6-hLU">
             <objects>
-                <viewController id="gbB-IS-z53" sceneMemberID="viewController">
+                <viewController id="gbB-IS-z53" customClass="AchatsViewController" customModule="BelArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="YYL-ZT-ygK">
                         <rect key="frame" x="0.0" y="0.0" width="918" height="498"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
                 <customObject id="ISR-jw-xAE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController id="JG0-En-9jf" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="1077" y="1598"/>
         </scene>

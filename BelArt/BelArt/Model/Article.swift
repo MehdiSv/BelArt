@@ -38,6 +38,7 @@ class Article: NSManagedObject {
         
         set {
             prixGr = 0
+            poids = 0
             prixAchat = newValue
         }
     }
