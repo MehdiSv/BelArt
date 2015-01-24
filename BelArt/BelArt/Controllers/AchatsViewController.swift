@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class AchatsViewController: NSViewController {
+class AchatsViewController: BelArtViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -2,7 +2,7 @@
 //  Achat.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 19/01/15.
+//  Created by Mehdi Sqalli on 24/01/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -15,5 +15,6 @@ class Achat: NSManagedObject {
     @NSManaged var date: NSDate
     @NSManaged var total: NSNumber
     @NSManaged var transactions: NSSet
+    @NSManaged var fournisseur: Fournisseur
 
 }

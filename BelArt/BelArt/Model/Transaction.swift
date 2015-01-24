@@ -17,4 +17,18 @@ class Transaction: NSManagedObject {
     @NSManaged var moyen: Moyen
     @NSManaged var achat: NSManagedObject
 
+    class func keyPathsForValuesAffectingHiddenEffet() -> NSArray {
+        return ["moyen.moyen"]
+    }
+
+    var hiddenEffet: Bool {
+        get {
+            
+            if let moyen = moyen as Moyen? {
+                return  !(moyen.moyen == "Effet")
+            }
+            
+            return true
+        }
+    }
 }

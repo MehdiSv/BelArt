@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910BAF161A73AFDD00DE25CE /* Achat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BAF151A73AFDD00DE25CE /* Achat.swift */; };
 		914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914567D81A63E25D00549AFB /* BelArtViewController.swift */; };
 		9156C2E51A6D3C5E00117C35 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2E41A6D3C5E00117C35 /* ClientViewController.swift */; };
 		9156C2E71A6D3E8B00117C35 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2E61A6D3E8B00117C35 /* Client.swift */; };
@@ -14,7 +15,6 @@
 		9156C2EF1A6DC43D00117C35 /* MoyensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2ED1A6DC43D00117C35 /* MoyensViewController.swift */; };
 		9156C2F21A6DC4B200117C35 /* Moyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2F11A6DC4B200117C35 /* Moyen.swift */; };
 		9156C2F41A6DC4B200117C35 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2F31A6DC4B200117C35 /* Transaction.swift */; };
-		9156C2F61A6DC4B200117C35 /* Achat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2F51A6DC4B200117C35 /* Achat.swift */; };
 		9159C2041A6B15B00061A8FC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C2031A6B15B00061A8FC /* Category.swift */; };
 		9159C2091A6B23130061A8FC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C2071A6B23130061A8FC /* CategoryViewController.swift */; };
 		9159C20E1A6B39570061A8FC /* BelArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9159C20C1A6B39570061A8FC /* BelArt.xcdatamodeld */; };
@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910BAF141A73AD9000DE25CE /* BelArt 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 5.xcdatamodel"; sourceTree = "<group>"; };
+		910BAF151A73AFDD00DE25CE /* Achat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Achat.swift; path = Model/Achat.swift; sourceTree = "<group>"; };
 		914567D81A63E25D00549AFB /* BelArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BelArtViewController.swift; path = Controllers/BelArtViewController.swift; sourceTree = "<group>"; };
 		9156C2E31A6D3B9000117C35 /* BelArt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BelArt.xcdatamodel; sourceTree = "<group>"; };
 		9156C2E41A6D3C5E00117C35 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientViewController.swift; path = Controllers/ClientViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		9156C2ED1A6DC43D00117C35 /* MoyensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyensViewController.swift; path = Controllers/MoyensViewController.swift; sourceTree = "<group>"; };
 		9156C2F11A6DC4B200117C35 /* Moyen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Moyen.swift; path = Model/Moyen.swift; sourceTree = "<group>"; };
 		9156C2F31A6DC4B200117C35 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = Model/Transaction.swift; sourceTree = "<group>"; };
-		9156C2F51A6DC4B200117C35 /* Achat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Achat.swift; path = Model/Achat.swift; sourceTree = "<group>"; };
+		9156C2F71A6F102100117C35 /* BelArt 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 4.xcdatamodel"; sourceTree = "<group>"; };
 		9159C2031A6B15B00061A8FC /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Model/Category.swift; sourceTree = "<group>"; };
 		9159C2071A6B23130061A8FC /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Controllers/CategoryViewController.swift; sourceTree = "<group>"; };
 		9159C20D1A6B39570061A8FC /* BelArt 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 3.xcdatamodel"; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		914567DC1A63F53700549AFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9156C2F51A6DC4B200117C35 /* Achat.swift */,
+				910BAF151A73AFDD00DE25CE /* Achat.swift */,
 				9156C2F31A6DC4B200117C35 /* Transaction.swift */,
 				9156C2F11A6DC4B200117C35 /* Moyen.swift */,
 				9156C2E61A6D3E8B00117C35 /* Client.swift */,
@@ -273,7 +275,7 @@
 			files = (
 				9156C2F21A6DC4B200117C35 /* Moyen.swift in Sources */,
 				9159C2091A6B23130061A8FC /* CategoryViewController.swift in Sources */,
-				9156C2F61A6DC4B200117C35 /* Achat.swift in Sources */,
+				910BAF161A73AFDD00DE25CE /* Achat.swift in Sources */,
 				9156C2F41A6DC4B200117C35 /* Transaction.swift in Sources */,
 				9156C2E51A6D3C5E00117C35 /* ClientViewController.swift in Sources */,
 				9156C2E71A6D3E8B00117C35 /* Client.swift in Sources */,
@@ -494,9 +496,11 @@
 			children = (
 				9156C2E31A6D3B9000117C35 /* BelArt.xcdatamodel */,
 				9156C2EC1A6DB6F200117C35 /* BelArt 2.xcdatamodel */,
+				9156C2F71A6F102100117C35 /* BelArt 4.xcdatamodel */,
+				910BAF141A73AD9000DE25CE /* BelArt 5.xcdatamodel */,
 				9159C20D1A6B39570061A8FC /* BelArt 3.xcdatamodel */,
 			);
-			currentVersion = 9156C2EC1A6DB6F200117C35 /* BelArt 2.xcdatamodel */;
+			currentVersion = 910BAF141A73AD9000DE25CE /* BelArt 5.xcdatamodel */;
 			path = BelArt.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
