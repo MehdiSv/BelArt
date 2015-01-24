@@ -278,7 +278,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="MPL-XX-G1g">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="MPL-XX-G1g">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -511,7 +511,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <connections>
-                                                        <binding destination="Zyi-cU-9rY" name="value" keyPath="arrangedObjects.@sum.montant" id="jKM-aL-OSo"/>
+                                                        <binding destination="pUG-l1-D5W" name="value" keyPath="arrangedObjects.paid" id="Btn-mf-I3V"/>
                                                     </connections>
                                                 </tableColumn>
                                                 <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="8Mp-pO-DpS">
@@ -574,7 +574,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="3qs-P1-eHt">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.00013113752032326223" horizontal="YES" id="3qs-P1-eHt">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -688,7 +688,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="bSc-NV-v0a">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="bSc-NV-v0a">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -886,7 +886,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <connections>
-                                    <binding destination="Zyi-cU-9rY" name="value" keyPath="arrangedObjects.@sum.montant" id="O4U-Tw-fu3"/>
+                                    <binding destination="pUG-l1-D5W" name="value" keyPath="selection.paid" id="ED4-rh-hge"/>
                                 </connections>
                             </textField>
                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ppg-tv-TXX">
@@ -978,7 +978,7 @@
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
                                     </binding>
-                                    <binding destination="Zyi-cU-9rY" name="value" keyPath="selection.montant" id="Kvh-OI-QxL"/>
+                                    <binding destination="Zyi-cU-9rY" name="value" keyPath="selection.price" id="N2Z-hj-mx7"/>
                                 </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bvN-tL-1TX">
@@ -1140,7 +1140,7 @@
         <!--Tab View Controller-->
         <scene sceneID="L5w-iX-B22">
             <objects>
-                <tabViewController selectedTabViewItemIndex="1" id="rbQ-4f-BV4" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="2" id="rbQ-4f-BV4" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Achats" id="dPq-J6-mxq"/>
                         <tabViewItem id="bjW-Ao-kbc"/>
@@ -1216,7 +1216,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="BqC-a2-Mik">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="BqC-a2-Mik">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1368,7 +1368,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ju6-Kj-ea1">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ju6-Kj-ea1">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1600,7 +1600,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ReR-kE-Bm0">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ReR-kE-Bm0">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1932,6 +1932,22 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.nom" id="EYQ-4a-Nxd"/>
                                                     </connections>
                                                 </tableColumn>
+                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="t5x-xm-o1s">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Balance">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Jdp-R5-ito">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <connections>
+                                                        <binding destination="IS2-53-iL9" name="value" keyPath="balance" id="dvB-fb-rpZ"/>
+                                                    </connections>
+                                                </tableColumn>
                                                 <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="40E-qf-hUG">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Tél">
                                                         <font key="font" metaFont="smallSystem"/>
@@ -1973,7 +1989,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ktQ-Oz-0Wn">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.00010177837398191853" horizontal="YES" id="ktQ-Oz-0Wn">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -2108,6 +2124,18 @@
                                     <action selector="remove:" target="YG3-yk-n2U" id="G0k-Q1-nP8"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WPG-Wi-vio">
+                                <rect key="frame" x="724" y="149" width="99" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="WtU-Li-JyA">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="eDq-2D-j5v"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="IS2-53-iL9" name="value" keyPath="balance" id="U8w-e3-CQ2"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Bsu-X4-Szj" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="8" id="3Nc-8k-Bwl"/>
@@ -2117,8 +2145,10 @@
                             <constraint firstItem="D8X-Gh-aM8" firstAttribute="top" secondItem="Bua-iK-1oT" secondAttribute="top" constant="12" id="5v5-OF-iXN"/>
                             <constraint firstItem="D1r-us-PMQ" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="10" id="67v-nU-XjU"/>
                             <constraint firstItem="4yQ-oO-9Ss" firstAttribute="leading" secondItem="Ole-5u-kaf" secondAttribute="trailing" constant="8" id="6Cj-U4-MVD"/>
+                            <constraint firstItem="WPG-Wi-vio" firstAttribute="top" secondItem="GhJ-cv-IKS" secondAttribute="bottom" constant="25" id="8ho-rv-kae"/>
                             <constraint firstItem="lEn-AZ-lM3" firstAttribute="height" secondItem="1qG-30-WdH" secondAttribute="height" id="Bhm-dl-LBU"/>
                             <constraint firstItem="4yQ-oO-9Ss" firstAttribute="top" secondItem="SWg-Rt-a0h" secondAttribute="bottom" constant="8" id="E8E-FV-8dU"/>
+                            <constraint firstAttribute="trailing" secondItem="WPG-Wi-vio" secondAttribute="trailing" constant="95" id="Fhj-Qm-W4x"/>
                             <constraint firstItem="D8X-Gh-aM8" firstAttribute="leading" secondItem="4yQ-oO-9Ss" secondAttribute="trailing" constant="8" id="JlX-lH-SRP"/>
                             <constraint firstItem="lEn-AZ-lM3" firstAttribute="width" secondItem="Bsu-X4-Szj" secondAttribute="width" id="KJ1-fm-hxb"/>
                             <constraint firstItem="lEn-AZ-lM3" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="8" id="KKz-fX-L1I"/>
@@ -2137,6 +2167,7 @@
                             <constraint firstItem="Bsu-X4-Szj" firstAttribute="top" secondItem="EW1-Hx-1JN" secondAttribute="bottom" constant="8" id="ezT-SE-wnN"/>
                             <constraint firstItem="4rg-sp-qXb" firstAttribute="top" secondItem="Bua-iK-1oT" secondAttribute="top" constant="20" id="hHh-ur-gki"/>
                             <constraint firstItem="GhJ-cv-IKS" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="8" id="kgo-6Y-aZT"/>
+                            <constraint firstItem="WPG-Wi-vio" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="10" id="pIt-Ku-5ci"/>
                             <constraint firstItem="EW1-Hx-1JN" firstAttribute="top" secondItem="lEn-AZ-lM3" secondAttribute="bottom" constant="8" id="qS9-gZ-YWR"/>
                             <constraint firstItem="lEn-AZ-lM3" firstAttribute="width" secondItem="1qG-30-WdH" secondAttribute="width" id="qZq-Wi-Suc"/>
                             <constraint firstItem="lEn-AZ-lM3" firstAttribute="top" secondItem="D1r-us-PMQ" secondAttribute="bottom" constant="8" id="tKN-Jl-g02"/>
@@ -2146,6 +2177,9 @@
                             <constraint firstItem="Ole-5u-kaf" firstAttribute="top" secondItem="SWg-Rt-a0h" secondAttribute="bottom" constant="8" id="zGa-7r-9hR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fAC" destination="YG3-yk-n2U" id="udI-LH-2Vk"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1077" y="984"/>
@@ -2200,7 +2234,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <connections>
-                                                        <binding destination="0Ph-DQ-cOp" name="value" keyPath="arrangedObjects.@sum.montant" id="qBH-ls-zZT"/>
+                                                        <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.paid" id="dc6-dh-quI"/>
                                                     </connections>
                                                 </tableColumn>
                                                 <tableColumn width="101" minWidth="10" maxWidth="3.4028234663852886e+38" id="bZt-IJ-Wi6">
@@ -2247,7 +2281,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.09036144578313253" horizontal="YES" id="Wd6-BO-AcL">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.06032312230188952" horizontal="YES" id="Wd6-BO-AcL">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -2361,7 +2395,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="kmR-Wv-zGz">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.18202482275929491" horizontal="YES" id="kmR-Wv-zGz">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -2559,7 +2593,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <connections>
-                                    <binding destination="0Ph-DQ-cOp" name="value" keyPath="arrangedObjects.@sum.montant" id="p1D-ep-Ahd"/>
+                                    <binding destination="JG0-En-9jf" name="value" keyPath="selection.paid" id="1sy-66-Uxt"/>
                                 </connections>
                             </textField>
                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Gts-vS-V8b">
@@ -2590,7 +2624,7 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 </datePickerCell>
                                 <connections>
-                                    <binding destination="JG0-En-9jf" name="hidden2" keyPath="selectedObjects.@count" previousBinding="DHx-vt-XtB" id="coa-sE-s3A">
+                                    <binding destination="JG0-En-9jf" name="hidden2" keyPath="selectedObjects.@count" previousBinding="CTC-FK-vix" id="bBS-Xd-nM4">
                                         <dictionary key="options">
                                             <integer key="NSMultipleValuesPlaceholder" value="-1"/>
                                             <integer key="NSNoSelectionPlaceholder" value="-1"/>
@@ -2599,7 +2633,7 @@
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
                                     </binding>
-                                    <binding destination="0Ph-DQ-cOp" name="hidden3" keyPath="selection.@count" previousBinding="coa-sE-s3A" id="8el-Nk-Bfn">
+                                    <binding destination="0Ph-DQ-cOp" name="hidden3" keyPath="selection.@count" previousBinding="bBS-Xd-nM4" id="9XP-P3-xWq">
                                         <dictionary key="options">
                                             <integer key="NSMultipleValuesPlaceholder" value="-1"/>
                                             <integer key="NSNoSelectionPlaceholder" value="-1"/>
@@ -2608,8 +2642,8 @@
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
                                     </binding>
-                                    <binding destination="0Ph-DQ-cOp" name="hidden" keyPath="selection.hiddenEffet" id="DHx-vt-XtB"/>
-                                    <binding destination="0Ph-DQ-cOp" name="value" keyPath="selection.dateEffet" id="XDc-gX-4g4"/>
+                                    <binding destination="0Ph-DQ-cOp" name="hidden" keyPath="selection.hiddenEffet" id="CTC-FK-vix"/>
+                                    <binding destination="0Ph-DQ-cOp" name="value" keyPath="selection.dateEffet" id="bKb-ev-vqq"/>
                                 </connections>
                             </datePicker>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CIN-Gk-zsu">
@@ -2629,12 +2663,12 @@
                                     <binding destination="s8u-g2-XMF" name="contentObjects" keyPath="arrangedObjects" previousBinding="VHi-jV-C4O" id="KgD-s3-kid"/>
                                     <binding destination="s8u-g2-XMF" name="content" keyPath="arrangedObjects" id="VHi-jV-C4O"/>
                                     <binding destination="s8u-g2-XMF" name="contentValues" keyPath="arrangedObjects.moyen" previousBinding="KgD-s3-kid" id="v0z-wV-ngk"/>
+                                    <binding destination="0Ph-DQ-cOp" name="selectedObject" keyPath="selection.moyen" previousBinding="v0z-wV-ngk" id="u1F-6c-vXa"/>
                                     <binding destination="JG0-En-9jf" name="hidden" keyPath="selectedObjects.@count" id="z6i-Bt-9wz">
                                         <dictionary key="options">
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
                                     </binding>
-                                    <binding destination="0Ph-DQ-cOp" name="selectedObject" keyPath="selection.moyen" previousBinding="v0z-wV-ngk" id="KW5-8i-9wi"/>
                                 </connections>
                             </popUpButton>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-MB-Q1J">
@@ -2651,7 +2685,7 @@
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
                                     </binding>
-                                    <binding destination="0Ph-DQ-cOp" name="value" keyPath="selection.montant" id="iB3-wo-6Tm"/>
+                                    <binding destination="0Ph-DQ-cOp" name="value" keyPath="selection.price" id="LSy-OA-QpA"/>
                                 </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KsA-Jw-b4Y">
@@ -2752,8 +2786,8 @@
                 </arrayController>
                 <arrayController mode="entity" entityName="Transaction" automaticallyPreparesContent="YES" id="0Ph-DQ-cOp" userLabel="TransactionsArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
                     <connections>
+                        <binding destination="JG0-En-9jf" name="contentSet" keyPath="selection.transactions" id="oWz-oR-i5B"/>
                         <binding destination="gbB-IS-z53" name="managedObjectContext" keyPath="managedObjectContext" id="q2O-l7-Vub"/>
-                        <binding destination="JG0-En-9jf" name="contentSet" keyPath="selection.transactions" id="CGe-Fw-xd2"/>
                     </connections>
                 </arrayController>
                 <arrayController mode="entity" entityName="Fournisseur" automaticallyPreparesContent="YES" id="8MQ-La-eFP" userLabel="FournisseursArrayController">

@@ -12,6 +12,7 @@
 		910BAF1D1A73B8AA00DE25CE /* BelArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 910BAF1B1A73B8AA00DE25CE /* BelArt.xcdatamodeld */; };
 		910BAF201A73BDF700DE25CE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BAF1F1A73BDF700DE25CE /* Transaction.swift */; };
 		910BAF221A73BDF800DE25CE /* Vente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BAF211A73BDF800DE25CE /* Vente.swift */; };
+		910BAF241A73D42A00DE25CE /* Fournisseur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BAF231A73D42A00DE25CE /* Fournisseur.swift */; };
 		914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914567D81A63E25D00549AFB /* BelArtViewController.swift */; };
 		9156C2E51A6D3C5E00117C35 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2E41A6D3C5E00117C35 /* ClientViewController.swift */; };
 		9156C2E71A6D3E8B00117C35 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2E61A6D3E8B00117C35 /* Client.swift */; };
@@ -21,7 +22,6 @@
 		9159C2041A6B15B00061A8FC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C2031A6B15B00061A8FC /* Category.swift */; };
 		9159C2091A6B23130061A8FC /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C2071A6B23130061A8FC /* CategoryViewController.swift */; };
 		9159C2101A6B3BC00061A8FC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159C20F1A6B3BC00061A8FC /* Article.swift */; };
-		9169DDC11A67248900E704A2 /* Fournisseur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169DDC01A67248900E704A2 /* Fournisseur.swift */; };
 		91752A971A66BD2200B6857E /* BelArtArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91752A961A66BD2200B6857E /* BelArtArrayController.swift */; };
 		91752A991A66C27600B6857E /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91752A981A66C27600B6857E /* StockViewController.swift */; };
 		FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09841A5C85E4004D4134 /* AppDelegate.swift */; };
@@ -48,6 +48,7 @@
 		910BAF1E1A73B90700DE25CE /* BelArt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BelArt.xcdatamodel; sourceTree = "<group>"; };
 		910BAF1F1A73BDF700DE25CE /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = Model/Transaction.swift; sourceTree = "<group>"; };
 		910BAF211A73BDF800DE25CE /* Vente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vente.swift; path = Model/Vente.swift; sourceTree = "<group>"; };
+		910BAF231A73D42A00DE25CE /* Fournisseur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fournisseur.swift; path = Model/Fournisseur.swift; sourceTree = "<group>"; };
 		914567D81A63E25D00549AFB /* BelArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BelArtViewController.swift; path = Controllers/BelArtViewController.swift; sourceTree = "<group>"; };
 		9156C2E41A6D3C5E00117C35 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientViewController.swift; path = Controllers/ClientViewController.swift; sourceTree = "<group>"; };
 		9156C2E61A6D3E8B00117C35 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Model/Client.swift; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		9159C2031A6B15B00061A8FC /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = Model/Category.swift; sourceTree = "<group>"; };
 		9159C2071A6B23130061A8FC /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Controllers/CategoryViewController.swift; sourceTree = "<group>"; };
 		9159C20F1A6B3BC00061A8FC /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
-		9169DDC01A67248900E704A2 /* Fournisseur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fournisseur.swift; path = Model/Fournisseur.swift; sourceTree = "<group>"; };
 		91752A961A66BD2200B6857E /* BelArtArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BelArtArrayController.swift; path = Controllers/BelArtArrayController.swift; sourceTree = "<group>"; };
 		91752A981A66C27600B6857E /* StockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockViewController.swift; path = Controllers/StockViewController.swift; sourceTree = "<group>"; };
 		FBFB097F1A5C85E4004D4134 /* BelArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +92,7 @@
 		914567DC1A63F53700549AFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				910BAF231A73D42A00DE25CE /* Fournisseur.swift */,
 				910BAF211A73BDF800DE25CE /* Vente.swift */,
 				910BAF1F1A73BDF700DE25CE /* Transaction.swift */,
 				910BAF151A73AFDD00DE25CE /* Achat.swift */,
@@ -99,7 +100,6 @@
 				9156C2E61A6D3E8B00117C35 /* Client.swift */,
 				9159C20F1A6B3BC00061A8FC /* Article.swift */,
 				9159C2031A6B15B00061A8FC /* Category.swift */,
-				9169DDC01A67248900E704A2 /* Fournisseur.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -164,14 +164,14 @@
 		FBFB09A41A5C9E3C004D4134 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBFB09A51A5C9E5E004D4134 /* FournisseursViewController.swift */,
-				914567D81A63E25D00549AFB /* BelArtViewController.swift */,
+				9156C2E81A6DB5E600117C35 /* AchatsViewController.swift */,
 				91752A961A66BD2200B6857E /* BelArtArrayController.swift */,
-				91752A981A66C27600B6857E /* StockViewController.swift */,
+				914567D81A63E25D00549AFB /* BelArtViewController.swift */,
 				9159C2071A6B23130061A8FC /* CategoryViewController.swift */,
 				9156C2E41A6D3C5E00117C35 /* ClientViewController.swift */,
-				9156C2E81A6DB5E600117C35 /* AchatsViewController.swift */,
+				FBFB09A51A5C9E5E004D4134 /* FournisseursViewController.swift */,
 				9156C2ED1A6DC43D00117C35 /* MoyensViewController.swift */,
+				91752A981A66C27600B6857E /* StockViewController.swift */,
 				910BAF171A73B62600DE25CE /* VentesViewController.swift */,
 			);
 			name = Controllers;
@@ -282,6 +282,7 @@
 				910BAF161A73AFDD00DE25CE /* Achat.swift in Sources */,
 				910BAF221A73BDF800DE25CE /* Vente.swift in Sources */,
 				9156C2E51A6D3C5E00117C35 /* ClientViewController.swift in Sources */,
+				910BAF241A73D42A00DE25CE /* Fournisseur.swift in Sources */,
 				9156C2E71A6D3E8B00117C35 /* Client.swift in Sources */,
 				91752A991A66C27600B6857E /* StockViewController.swift in Sources */,
 				914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */,
@@ -294,7 +295,6 @@
 				910BAF191A73B62600DE25CE /* VentesViewController.swift in Sources */,
 				91752A971A66BD2200B6857E /* BelArtArrayController.swift in Sources */,
 				FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */,
-				9169DDC11A67248900E704A2 /* Fournisseur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

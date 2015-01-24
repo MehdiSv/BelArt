@@ -18,4 +18,14 @@ class Vente: NSManagedObject {
     @NSManaged var article: Article
     @NSManaged var transactions: NSSet
 
+    class func keyPathsForValuesAffectingPaid() -> NSArray {
+        return ["transactions"]
+    }
+    
+    var paid:NSNumber {
+        get {
+            return valueForKeyPath("transactions.@sum.montant") as NSNumber
+        }
+    }
+
 }

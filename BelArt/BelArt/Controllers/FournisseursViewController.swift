@@ -10,10 +10,27 @@ import Cocoa
 
 class FournisseursViewController: BelArtViewController  {
     
+    @IBOutlet var fAC: BelArtArrayController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // TODO : Add Categories
-        // TODO : migration core data model -> Test!
+    }
+    
+    var balance:NSNumber {
+        get {
+            
+            if fAC.selectedObjects.count > 0 {
+                if let fournisseur = fAC.selectedObjects[0] as? Fournisseur {
+                    let achats = fournisseur.achats
+                    for achat in achats {
+                        let tutu = achat as Achat
+                        println(tutu.total)
+                    }
+                }
+            }
+            return 0
+            
+        }
     }
 }

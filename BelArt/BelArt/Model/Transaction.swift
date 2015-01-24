@@ -18,6 +18,31 @@ class Transaction: NSManagedObject {
     @NSManaged var moyen: Moyen
     @NSManaged var vente: NSManagedObject
 
+    var price:NSNumber {
+        get {
+            return montant
+        }
+        set {
+            
+            self.valueForKey("achat")?.willChangeValueForKey("paid")
+            self.valueForKey("vente")?.willChangeValueForKey("paid")
+            self.willChangeValueForKey("price")
+            
+            montant = newValue
+            
+            self.didChangeValueForKey("price")
+            self.valueForKey("achat")?.didChangeValueForKey("paid")
+            self.valueForKey("vente")?.didChangeValueForKey("paid")
+        }
+    }
+    
+    override class func automaticallyNotifiesObserversForKey(key: String) -> Bool {
+        if key == "price" {
+            return true
+        }
+        return false
+    }
+
     class func keyPathsForValuesAffectingHiddenEffet() -> NSArray {
         return ["moyen.moyen"]
     }
@@ -30,7 +55,7 @@ class Transaction: NSManagedObject {
         get {
             
             if let moyen = moyen as Moyen? {
-                return  !(moyen.moyen == "Effet")
+                return !(moyen.moyen == "Effet")
             }
             
             return true
