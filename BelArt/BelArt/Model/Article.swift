@@ -42,4 +42,10 @@ class Article: NSManagedObject {
             prixAchat = newValue
         }
     }
+    
+    var fullName: String {
+        get {
+            return nom + " - " + category.name + " - \(poids)g"
+        }
+    }
 }
