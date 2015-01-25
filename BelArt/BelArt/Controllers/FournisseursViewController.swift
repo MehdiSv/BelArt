@@ -22,10 +22,15 @@ class FournisseursViewController: BelArtViewController  {
             
             if fAC.selectedObjects.count > 0 {
                 if let fournisseur = fAC.selectedObjects[0] as? Fournisseur {
-                    let achats = fournisseur.achats
-                    for achat in achats {
-                        let tutu = achat as Achat
-                        println(tutu.total)
+                    if fournisseur.nom == "Oromecanica" {
+                        let achats = fournisseur.achats
+                        var result:Float = 0
+                        for achatObject in achats {
+                            let achat = achatObject as Achat
+                            result = result + achat.total.floatValue - achat.paid.floatValue
+                        }
+                        println(result)
+                        return result
                     }
                 }
             }

@@ -26,5 +26,11 @@ class Achat: NSManagedObject {
         get {
             return valueForKeyPath("transactions.@sum.montant") as NSNumber
         }
-    }    
+    }
+    
+    var balance:NSNumber {
+        get {
+            return total.floatValue - paid.floatValue
+        }
+    }
 }

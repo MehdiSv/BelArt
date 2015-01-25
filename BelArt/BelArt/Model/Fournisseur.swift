@@ -19,4 +19,10 @@ class Fournisseur: NSManagedObject {
     @NSManaged var achats: NSSet
     @NSManaged var articles: NSSet
 
+    var balance:NSNumber {
+        get {
+            return valueForKeyPath("achats.@sum.balance") as NSNumber
+        }
+    }
+
 }
