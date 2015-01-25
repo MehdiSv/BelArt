@@ -28,4 +28,10 @@ class Vente: NSManagedObject {
         }
     }
 
+    var balance:NSNumber {
+        get {
+            return montant.floatValue - paid.floatValue
+        }
+    }
+
 }
