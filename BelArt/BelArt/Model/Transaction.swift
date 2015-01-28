@@ -56,7 +56,7 @@ class Transaction: NSManagedObject {
         get {
             
             if let moyen = moyen as Moyen? {
-                return !(moyen.moyen == "Effet")
+                return !((moyen.moyen == "Effet") || (moyen.moyen == "Cheque"))
             }
             
             return true
@@ -66,7 +66,7 @@ class Transaction: NSManagedObject {
     var date:NSDate? {
         get {
             if let moyen = moyen as Moyen? {
-                if moyen.moyen == "Effet" {
+                if moyen.moyen == "Effet" || moyen.moyen == "Cheque" {
                     return dateEffet
                 }
             }

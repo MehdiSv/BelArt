@@ -34,4 +34,10 @@ class Vente: NSManagedObject {
         }
     }
 
+    var marge:NSNumber {
+        get {
+            return montant.floatValue - article.prixTotal.floatValue
+        }
+    }
+    
 }
