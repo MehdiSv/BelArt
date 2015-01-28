@@ -2,7 +2,7 @@
 //  Client.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 25/01/15.
+//  Created by Mehdi Sqalli on 28/01/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -17,11 +17,22 @@ class Client: NSManagedObject {
     @NSManaged var prenom: String
     @NSManaged var tel: String
     @NSManaged var achats: NSSet
+    @NSManaged var transactions: NSSet
 
     var balance:NSNumber {
         get {
             return valueForKeyPath("achats.@sum.balance") as NSNumber
         }
+    }
+    
+    var fullName:String {
+        
+        get {
+            
+            return prenom + nom
+            
+        }
+        
     }
 
 }

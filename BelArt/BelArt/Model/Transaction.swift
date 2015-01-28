@@ -2,7 +2,7 @@
 //  Transaction.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 24/01/15.
+//  Created by Mehdi Sqalli on 28/01/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -16,7 +16,8 @@ class Transaction: NSManagedObject {
     @NSManaged var montant: NSNumber
     @NSManaged var achat: Achat
     @NSManaged var moyen: Moyen
-    @NSManaged var vente: NSManagedObject
+    @NSManaged var vente: Vente
+    @NSManaged var client: Client
 
     var price:NSNumber {
         get {
@@ -42,15 +43,15 @@ class Transaction: NSManagedObject {
         }
         return false
     }
-
+    
     class func keyPathsForValuesAffectingHiddenEffet() -> NSArray {
         return ["moyen.moyen"]
     }
-
+    
     class func keyPathsForValuesAffectingDate() -> NSArray {
         return ["dateEffet", "moyen.moyen"]
     }
-
+    
     var hiddenEffet: Bool {
         get {
             
