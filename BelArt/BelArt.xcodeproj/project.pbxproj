@@ -25,6 +25,7 @@
 		918B571B1A7963C200876D19 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B571A1A7963C200876D19 /* Client.swift */; };
 		918B571D1A79640D00876D19 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B571C1A79640D00876D19 /* Transaction.swift */; };
 		918B57241A7C16BF00876D19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B57231A7C16BF00876D19 /* Extensions.swift */; };
+		918B57271A7C22E000876D19 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B57251A7C22E000876D19 /* WindowController.swift */; };
 		FBFB09851A5C85E4004D4134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFB09841A5C85E4004D4134 /* AppDelegate.swift */; };
 		FBFB098C1A5C85E4004D4134 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098B1A5C85E4004D4134 /* Images.xcassets */; };
 		FBFB098F1A5C85E4004D4134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFB098D1A5C85E4004D4134 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		918B571A1A7963C200876D19 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Model/Client.swift; sourceTree = "<group>"; };
 		918B571C1A79640D00876D19 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = Model/Transaction.swift; sourceTree = "<group>"; };
 		918B57231A7C16BF00876D19 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
+		918B57251A7C22E000876D19 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindowController.swift; path = Controllers/WindowController.swift; sourceTree = "<group>"; };
 		FBFB097F1A5C85E4004D4134 /* BelArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFB09831A5C85E4004D4134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBFB09841A5C85E4004D4134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		FBFB09A41A5C9E3C004D4134 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				918B57251A7C22E000876D19 /* WindowController.swift */,
 				9156C2E81A6DB5E600117C35 /* AchatsViewController.swift */,
 				91752A961A66BD2200B6857E /* BelArtArrayController.swift */,
 				914567D81A63E25D00549AFB /* BelArtViewController.swift */,
@@ -299,6 +302,7 @@
 				918B57181A795A7F00876D19 /* Achat.swift in Sources */,
 				914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */,
 				9156C2EA1A6DB5E600117C35 /* AchatsViewController.swift in Sources */,
+				918B57271A7C22E000876D19 /* WindowController.swift in Sources */,
 				FBFB09A61A5C9E5E004D4134 /* FournisseursViewController.swift in Sources */,
 				918B571D1A79640D00876D19 /* Transaction.swift in Sources */,
 				9156C2EF1A6DC43D00117C35 /* MoyensViewController.swift in Sources */,
