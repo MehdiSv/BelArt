@@ -10,9 +10,14 @@ import Cocoa
 
 class VentesViewController: BelArtViewController {
 
+    @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet var articlesAC: NSArrayController!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+ 
+        let sd = NSSortDescriptor(key: "fullName", ascending: true)
+        articlesAC.sortDescriptors = [sd]
+        
     }
     
 }

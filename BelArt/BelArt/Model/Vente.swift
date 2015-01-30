@@ -22,6 +22,10 @@ class Vente: NSManagedObject {
         return ["transactions"]
     }
     
+    class func keyPathsForValuesAffectingMarge() -> NSArray {
+        return ["article", "montant"]
+    }
+    
     var paid:NSNumber {
         get {
             return valueForKeyPath("transactions.@sum.montant") as NSNumber
@@ -36,7 +40,10 @@ class Vente: NSManagedObject {
 
     var marge:NSNumber {
         get {
-            return montant.floatValue - article.prixTotal.floatValue
+            if let article = article as Article? {
+                return montant.floatValue - article.prixTotal.floatValue
+            }
+            return montant.floatValue
         }
     }
     

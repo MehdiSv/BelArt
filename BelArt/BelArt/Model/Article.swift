@@ -45,7 +45,7 @@ class Article: NSManagedObject {
     
     var fullName: String {
         get {
-            return nom + " - " + category.name + " - \(poids)g"
+            return category.name + " - \(poids)g - " + nom
         }
     }
 }
