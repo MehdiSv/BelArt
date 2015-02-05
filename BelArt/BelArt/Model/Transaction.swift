@@ -2,7 +2,7 @@
 //  Transaction.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 28/01/15.
+//  Created by Mehdi Sqalli on 05/02/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -14,10 +14,12 @@ class Transaction: NSManagedObject {
 
     @NSManaged var dateEffet: NSDate
     @NSManaged var montant: NSNumber
+    @NSManaged var nom: String
     @NSManaged var achat: Achat
+    @NSManaged var client: Client
+    @NSManaged var compte: Compte
     @NSManaged var moyen: Moyen
     @NSManaged var vente: Vente
-    @NSManaged var client: Client
 
     var price:NSNumber {
         get {
