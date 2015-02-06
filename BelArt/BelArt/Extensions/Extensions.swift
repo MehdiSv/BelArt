@@ -17,7 +17,7 @@ extension NSTableColumn {
         let columns = tableView?.tableColumns as [NSTableColumn]
         let columnIndex = find(columns, self)
         
-        var maxSize:CGFloat = 55
+        var maxSize:CGFloat = 80
         for var i = 0; i < tableView!.numberOfRows; ++i
         {
             let cell = tableView?.preparedCellAtColumn(columnIndex!, row: i)

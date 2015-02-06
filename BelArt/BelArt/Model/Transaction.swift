@@ -2,7 +2,7 @@
 //  Transaction.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 05/02/15.
+//  Created by Mehdi Sqalli on 06/02/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -12,13 +12,15 @@ import CoreData
 @objc(Transaction)
 class Transaction: NSManagedObject {
 
+    @NSManaged var date: NSDate?
     @NSManaged var dateEffet: NSDate
     @NSManaged var montant: NSNumber
     @NSManaged var nom: String
+    @NSManaged var shopExpense: NSNumber
     @NSManaged var achat: Achat
     @NSManaged var client: Client
     @NSManaged var compte: Compte
-    @NSManaged var moyen: Moyen
+    @NSManaged var moyen: Moyen?
     @NSManaged var vente: Vente
 
     var price:NSNumber {
@@ -50,14 +52,14 @@ class Transaction: NSManagedObject {
         return ["moyen.moyen"]
     }
     
-    class func keyPathsForValuesAffectingDate() -> NSArray {
+    class func keyPathsForValuesAffectingDateEffetAvailable() -> NSArray {
         return ["dateEffet", "moyen.moyen"]
     }
     
     var hiddenEffet: Bool {
         get {
             
-            if let moyen = moyen as Moyen? {
+            if let moyen = moyen {
                 return !((moyen.moyen == "Effet") || (moyen.moyen == "Cheque"))
             }
             
@@ -65,9 +67,9 @@ class Transaction: NSManagedObject {
         }
     }
     
-    var date:NSDate? {
+    var dateEffetAvailable:NSDate? {
         get {
-            if let moyen = moyen as Moyen? {
+            if let moyen = moyen {
                 if moyen.moyen == "Effet" || moyen.moyen == "Cheque" {
                     return dateEffet
                 }

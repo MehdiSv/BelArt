@@ -26,26 +26,4 @@ class FournisseursViewController: BelArtViewController  {
         }
         
     }
-
-    var balance:NSNumber {
-        get {
-            
-            if fAC.selectedObjects.count > 0 {
-                if let fournisseur = fAC.selectedObjects[0] as? Fournisseur {
-                    if fournisseur.nom == "Oromecanica" {
-                        let achats = fournisseur.achats
-                        var result:Float = 0
-                        for achatObject in achats {
-                            let achat = achatObject as Achat
-                            result = result + achat.total.floatValue - achat.paid.floatValue
-                        }
-                        println(result)
-                        return result
-                    }
-                }
-            }
-            return 0
-            
-        }
-    }
 }

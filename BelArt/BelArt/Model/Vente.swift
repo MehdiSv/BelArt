@@ -15,7 +15,7 @@ class Vente: NSManagedObject {
     @NSManaged var montant: NSNumber
     @NSManaged var date: NSDate
     @NSManaged var client: Client
-    @NSManaged var article: Article
+    @NSManaged var article: Article?
     @NSManaged var transactions: NSSet
 
     class func keyPathsForValuesAffectingPaid() -> NSArray {
@@ -40,7 +40,7 @@ class Vente: NSManagedObject {
 
     var marge:NSNumber {
         get {
-            if let article = article as Article? {
+            if let article = article {
                 return montant.floatValue - article.prixTotal.floatValue
             }
             return montant.floatValue

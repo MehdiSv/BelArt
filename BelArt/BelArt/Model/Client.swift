@@ -35,4 +35,19 @@ class Client: NSManagedObject {
         
     }
 
+    var buyings:Float {
+        get {
+            
+            var total:Float = 0
+            for achat in achats.allObjects as [Vente] {
+                
+                total += achat.montant.floatValue
+                
+            }
+            
+            return total
+            
+        }
+    }
+    
 }

@@ -25,4 +25,50 @@ class Fournisseur: NSManagedObject {
         }
     }
 
+    var totalBuyings:Float {
+        get {
+            
+            var total:Float = 0
+            
+            for achat in achats.allObjects as [Achat] {
+                total += (achat.total.floatValue - achat.remise.floatValue)
+            }
+            
+            return total
+            
+        }
+    }
+    
+    var totalSold:Float {
+        get {
+            
+            var total:Float = 0
+            
+            for article in articles.allObjects as [Article] {
+                
+                if let vente = article.vente {
+                    total += vente.montant.floatValue
+                }
+            }
+            
+            return total
+        }
+    }
+    
+    var totalSoldMarge:Float {
+        get {
+            
+            var total:Float = 0
+            
+            for article in articles.allObjects as [Article] {
+                
+                if let vente = article.vente {
+                    total += vente.marge.floatValue
+                }
+            }
+            
+            return total
+        }
+    }
+    
 }

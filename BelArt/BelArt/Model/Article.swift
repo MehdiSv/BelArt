@@ -18,7 +18,7 @@ class Article: NSManagedObject {
     @NSManaged var prixGr: NSNumber
     @NSManaged var category: Category
     @NSManaged var fournisseur: Fournisseur
-    @NSManaged var vente: Vente
+    @NSManaged var vente: Vente?
 
     class func keyPathsForValuesAffectingPrixTotal() -> NSArray {
         return ["poids", "prixGr"]

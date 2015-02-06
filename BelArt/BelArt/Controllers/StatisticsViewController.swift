@@ -69,7 +69,6 @@ class StatisticsViewController: BelArtViewController {
         
         for transaction in transactionsAC.arrangedObjects as [Transaction] {
             totalEffets += transaction.montant.floatValue
-            println(transaction.moyen.moyen)
         }
 
         self.didChangeValueForKey("totalEffets")
