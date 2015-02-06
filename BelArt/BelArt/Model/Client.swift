@@ -13,7 +13,7 @@ import CoreData
 class Client: NSManagedObject {
 
     @NSManaged var email: String
-    @NSManaged var nom: String
+    @NSManaged var nom: String?
     @NSManaged var prenom: String
     @NSManaged var tel: String
     @NSManaged var achats: NSSet
@@ -25,12 +25,18 @@ class Client: NSManagedObject {
         }
     }
     
+    class func keyPathsForValuesAffectingFullName() -> NSArray {
+        return ["nom", "prenom"]
+    }
+
+    
     var fullName:String {
         
         get {
-            
-            return prenom + nom
-            
+            if let name = nom {
+                return prenom + " " + name
+            }
+            return ""
         }
         
     }

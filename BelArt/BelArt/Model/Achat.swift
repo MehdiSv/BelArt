@@ -2,7 +2,7 @@
 //  Achat.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 28/01/15.
+//  Created by Mehdi Sqalli on 06/02/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -11,13 +11,15 @@ import CoreData
 
 @objc(Achat)
 class Achat: NSManagedObject {
-    
+
     @NSManaged var date: NSDate
-    @NSManaged var total: NSNumber
     @NSManaged var remise: NSNumber
+    @NSManaged var total: NSNumber
+    @NSManaged var orRemis: NSNumber
+    @NSManaged var orRecu: NSNumber
     @NSManaged var fournisseur: Fournisseur
     @NSManaged var transactions: NSSet
-    
+
     class func keyPathsForValuesAffectingPaid() -> NSArray {
         return ["transactions"]
     }
@@ -33,4 +35,5 @@ class Achat: NSManagedObject {
             return total.floatValue - paid.floatValue - remise.floatValue
         }
     }
+
 }

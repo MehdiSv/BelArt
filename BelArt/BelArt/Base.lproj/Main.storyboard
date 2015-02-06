@@ -636,7 +636,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.0052507041347197355" horizontal="YES" id="3qs-P1-eHt">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="3qs-P1-eHt">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -2531,7 +2531,7 @@
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="63" minWidth="40" maxWidth="1000" id="OS8-ST-tFN">
+                                                <tableColumn width="47" minWidth="40" maxWidth="1000" id="OS8-ST-tFN">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Montant">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2547,7 +2547,7 @@
                                                         <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.total" id="Eu8-AF-CH6"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="55" minWidth="10" maxWidth="3.4028234663852886e+38" id="qAb-Mw-HVu">
+                                                <tableColumn width="43" minWidth="10" maxWidth="3.4028234663852886e+38" id="qAb-Mw-HVu">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Payé">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2563,7 +2563,7 @@
                                                         <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.paid" id="dc6-dh-quI"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="70" minWidth="10" maxWidth="3.4028234663852886e+38" id="bZt-IJ-Wi6">
+                                                <tableColumn width="56" minWidth="10" maxWidth="3.4028234663852886e+38" id="bZt-IJ-Wi6">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Fournisseur">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2579,7 +2579,7 @@
                                                         <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.fournisseur.nom" id="dBd-92-BhE"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="78" minWidth="10" maxWidth="3.4028234663852886e+38" id="a5c-cr-urJ">
+                                                <tableColumn width="47" minWidth="10" maxWidth="3.4028234663852886e+38" id="a5c-cr-urJ">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Date">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2598,7 +2598,7 @@
                                                         <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.date" id="gqQ-jc-hUb"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="63" minWidth="10" maxWidth="3.4028234663852886e+38" id="TZx-oR-id7">
+                                                <tableColumn width="43" minWidth="10" maxWidth="3.4028234663852886e+38" id="TZx-oR-id7">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Remise">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2614,6 +2614,38 @@
                                                         <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.remise" id="rPm-gR-JXc"/>
                                                     </connections>
                                                 </tableColumn>
+                                                <tableColumn width="39" minWidth="10" maxWidth="3.4028234663852886e+38" id="1TN-OD-OGa">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Or Recus">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="G9U-Rc-fb0">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <connections>
+                                                        <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.orRecu" id="tOB-ec-8aY"/>
+                                                    </connections>
+                                                </tableColumn>
+                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="Uo6-PL-vNT">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Or Remis">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="XLa-3U-O2s">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <connections>
+                                                        <binding destination="JG0-En-9jf" name="value" keyPath="arrangedObjects.orRemis" id="bBR-fn-VWi"/>
+                                                    </connections>
+                                                </tableColumn>
                                             </tableColumns>
                                             <connections>
                                                 <outlet property="dataSource" destination="IS2-53-iL9" id="s2c-41-W18"/>
@@ -2623,7 +2655,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Wd6-BO-AcL">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="Wd6-BO-AcL">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -3129,6 +3161,46 @@
                                     <binding destination="JG0-En-9jf" name="value" keyPath="selection.remise" id="H15-re-eNB"/>
                                 </connections>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hEL-yA-c9U">
+                                <rect key="frame" x="16" y="160" width="89" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Or Recus" id="m2W-Kl-a4j">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-aJ-qkG">
+                                <rect key="frame" x="16" y="130" width="131" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="5wr-bn-ppn">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="tkW-js-bLR"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="JG0-En-9jf" name="value" keyPath="selection.orRecu" id="Kza-pU-Xhg"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-Yq-Wpj">
+                                <rect key="frame" x="16" y="105" width="89" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Or Remis" id="EHc-Jc-mwq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wql-3u-6GD">
+                                <rect key="frame" x="16" y="75" width="131" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="eQi-pV-uws">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="KOj-DZ-1LO"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="JG0-En-9jf" name="value" keyPath="selection.orRemis" id="W6T-Il-DVp"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="CIN-Gk-zsu" firstAttribute="leading" secondItem="lpl-Y8-5eM" secondAttribute="leading" id="1H0-lq-hFP"/>
@@ -3138,7 +3210,9 @@
                             <constraint firstItem="7Co-2t-Gz0" firstAttribute="baseline" secondItem="rPU-gu-ove" secondAttribute="baseline" id="4I0-1V-G0Z"/>
                             <constraint firstItem="Zfw-uN-9di" firstAttribute="bottom" secondItem="RIB-ns-Ex2" secondAttribute="bottom" id="5HX-fk-Ea7"/>
                             <constraint firstItem="VkL-MB-Q1J" firstAttribute="top" secondItem="CIN-Gk-zsu" secondAttribute="top" id="735-5G-l1W"/>
+                            <constraint firstItem="hEL-yA-c9U" firstAttribute="top" secondItem="mdy-ab-71I" secondAttribute="bottom" constant="8" symbolic="YES" id="7D3-6M-tQs"/>
                             <constraint firstItem="mdy-ab-71I" firstAttribute="top" secondItem="J8D-Uj-45L" secondAttribute="bottom" constant="8" symbolic="YES" id="ASE-Zx-TN4"/>
+                            <constraint firstItem="vcX-aJ-qkG" firstAttribute="top" secondItem="hEL-yA-c9U" secondAttribute="bottom" constant="8" symbolic="YES" id="Ac4-SE-cdf"/>
                             <constraint firstItem="CIN-Gk-zsu" firstAttribute="leading" secondItem="7Co-2t-Gz0" secondAttribute="leading" id="BmH-gh-KxG"/>
                             <constraint firstItem="rPU-gu-ove" firstAttribute="leading" secondItem="VkL-MB-Q1J" secondAttribute="leading" id="D7d-wv-J4J"/>
                             <constraint firstItem="HQF-wq-PJD" firstAttribute="leading" secondItem="VkL-MB-Q1J" secondAttribute="leading" id="EmY-B9-xMC"/>
@@ -3147,21 +3221,26 @@
                             <constraint firstItem="BMi-Tb-vpW" firstAttribute="leading" secondItem="hSb-Fm-GPh" secondAttribute="trailing" constant="8" symbolic="YES" id="IZb-FB-kl7"/>
                             <constraint firstItem="cAe-Cj-BnS" firstAttribute="trailing" secondItem="Fqi-4y-0hb" secondAttribute="trailing" id="JRd-nT-B5q"/>
                             <constraint firstItem="Gts-vS-V8b" firstAttribute="top" secondItem="wMs-14-72H" secondAttribute="bottom" constant="8" symbolic="YES" id="JZh-S3-uf2"/>
+                            <constraint firstItem="wql-3u-6GD" firstAttribute="leading" secondItem="vcX-aJ-qkG" secondAttribute="leading" id="K14-Ia-eC4"/>
                             <constraint firstItem="RIB-ns-Ex2" firstAttribute="top" secondItem="cdL-7o-qUz" secondAttribute="top" id="K2q-DI-Wzr"/>
+                            <constraint firstItem="ZIL-Yq-Wpj" firstAttribute="top" secondItem="vcX-aJ-qkG" secondAttribute="bottom" constant="8" symbolic="YES" id="KPD-A7-Y4o"/>
                             <constraint firstItem="RIB-ns-Ex2" firstAttribute="bottom" secondItem="A8j-Db-Cjo" secondAttribute="bottom" id="MKR-Wy-pHa"/>
                             <constraint firstItem="rPU-gu-ove" firstAttribute="leading" secondItem="Zfw-uN-9di" secondAttribute="trailing" constant="42" id="Ma1-9a-SPK"/>
                             <constraint firstItem="BMi-Tb-vpW" firstAttribute="leading" secondItem="0l5-Eh-SQc" secondAttribute="trailing" constant="6" id="N46-Ap-3Zb"/>
+                            <constraint firstItem="wql-3u-6GD" firstAttribute="trailing" secondItem="vcX-aJ-qkG" secondAttribute="trailing" id="NLy-cT-dPb"/>
                             <constraint firstItem="qOg-LJ-nyc" firstAttribute="leading" secondItem="mdy-ab-71I" secondAttribute="leading" id="NRG-Aw-8Cf"/>
                             <constraint firstItem="BMi-Tb-vpW" firstAttribute="leading" secondItem="KsA-Jw-b4Y" secondAttribute="trailing" constant="54" id="O5o-ta-ldT"/>
                             <constraint firstItem="cdL-7o-qUz" firstAttribute="bottom" secondItem="Zfw-uN-9di" secondAttribute="bottom" id="O9i-d4-fYE"/>
                             <constraint firstItem="BMi-Tb-vpW" firstAttribute="leading" secondItem="Gts-vS-V8b" secondAttribute="trailing" constant="4" id="OFI-d5-BCA"/>
                             <constraint firstItem="cAe-Cj-BnS" firstAttribute="leading" secondItem="lpl-Y8-5eM" secondAttribute="leading" id="PHM-HV-vaU"/>
                             <constraint firstItem="BMi-Tb-vpW" firstAttribute="leading" secondItem="OjT-Ly-3Fc" secondAttribute="trailing" constant="50" id="Qvu-0a-WPF"/>
+                            <constraint firstItem="wql-3u-6GD" firstAttribute="top" secondItem="ZIL-Yq-Wpj" secondAttribute="bottom" constant="8" symbolic="YES" id="RZI-Fm-nbE"/>
                             <constraint firstItem="lpl-Y8-5eM" firstAttribute="leading" secondItem="HQF-wq-PJD" secondAttribute="trailing" constant="97" id="S2Q-lB-rf3"/>
                             <constraint firstItem="Gts-vS-V8b" firstAttribute="leading" secondItem="qOg-LJ-nyc" secondAttribute="leading" id="SDx-fY-j61"/>
                             <constraint firstItem="lpl-Y8-5eM" firstAttribute="baseline" secondItem="HQF-wq-PJD" secondAttribute="baseline" id="T5l-I5-H4x"/>
                             <constraint firstAttribute="trailing" secondItem="CIN-Gk-zsu" secondAttribute="trailing" constant="20" symbolic="YES" id="UKQ-y5-oGb"/>
                             <constraint firstItem="JL3-uO-oJq" firstAttribute="leading" secondItem="YYL-ZT-ygK" secondAttribute="leading" constant="22" id="V94-Db-XPG"/>
+                            <constraint firstItem="ZIL-Yq-Wpj" firstAttribute="leading" secondItem="hEL-yA-c9U" secondAttribute="leading" id="Vwy-nK-ed6"/>
                             <constraint firstItem="Fqi-4y-0hb" firstAttribute="top" secondItem="5Mg-el-9UY" secondAttribute="bottom" constant="9" id="W14-os-lSg"/>
                             <constraint firstItem="cAe-Cj-BnS" firstAttribute="top" secondItem="5Mg-el-9UY" secondAttribute="top" id="W3C-4O-376"/>
                             <constraint firstItem="6eh-BY-QOI" firstAttribute="top" secondItem="BMi-Tb-vpW" secondAttribute="bottom" constant="8" symbolic="YES" id="WKD-bl-JTZ"/>
@@ -3173,12 +3252,14 @@
                             <constraint firstItem="J8D-Uj-45L" firstAttribute="leading" secondItem="YYL-ZT-ygK" secondAttribute="leading" constant="18" id="ZIE-JS-Xtq"/>
                             <constraint firstItem="5Mg-el-9UY" firstAttribute="trailing" secondItem="VkL-MB-Q1J" secondAttribute="trailing" id="Zdv-cS-m7m"/>
                             <constraint firstItem="hSb-Fm-GPh" firstAttribute="leading" secondItem="wMs-14-72H" secondAttribute="leading" id="abv-8T-KOc"/>
+                            <constraint firstItem="hEL-yA-c9U" firstAttribute="trailing" secondItem="J8D-Uj-45L" secondAttribute="trailing" id="anj-Dr-E4K"/>
                             <constraint firstItem="KsA-Jw-b4Y" firstAttribute="top" secondItem="Gts-vS-V8b" secondAttribute="bottom" constant="20" id="cLQ-bp-QlY"/>
                             <constraint firstItem="cdL-7o-qUz" firstAttribute="leading" secondItem="6eh-BY-QOI" secondAttribute="trailing" constant="8" symbolic="YES" id="chB-qc-pqF"/>
                             <constraint firstItem="Gts-vS-V8b" firstAttribute="centerX" secondItem="hSb-Fm-GPh" secondAttribute="centerX" id="cs5-YQ-q23"/>
                             <constraint firstItem="hSb-Fm-GPh" firstAttribute="leading" secondItem="YYL-ZT-ygK" secondAttribute="leading" constant="20" symbolic="YES" id="dHD-z6-fNS"/>
                             <constraint firstItem="0l5-Eh-SQc" firstAttribute="top" secondItem="OjT-Ly-3Fc" secondAttribute="bottom" constant="8" symbolic="YES" id="e6G-5g-3qG"/>
                             <constraint firstItem="KsA-Jw-b4Y" firstAttribute="leading" secondItem="wMs-14-72H" secondAttribute="leading" id="eBU-W2-bEI"/>
+                            <constraint firstItem="hEL-yA-c9U" firstAttribute="leading" secondItem="J8D-Uj-45L" secondAttribute="leading" id="gOH-KS-Rfk"/>
                             <constraint firstItem="OjT-Ly-3Fc" firstAttribute="baseline" secondItem="HQF-wq-PJD" secondAttribute="baseline" id="gj5-i6-bVx"/>
                             <constraint firstItem="BMi-Tb-vpW" firstAttribute="leading" secondItem="J8D-Uj-45L" secondAttribute="trailing" constant="56" id="hIS-xz-Xhj"/>
                             <constraint firstItem="5Mg-el-9UY" firstAttribute="baseline" secondItem="0l5-Eh-SQc" secondAttribute="baseline" id="hOX-Vb-uhC"/>
@@ -3193,14 +3274,17 @@
                             <constraint firstItem="rPU-gu-ove" firstAttribute="baseline" secondItem="JL3-uO-oJq" secondAttribute="baseline" id="pJF-Bi-Jm8"/>
                             <constraint firstItem="BMi-Tb-vpW" firstAttribute="leading" secondItem="mdy-ab-71I" secondAttribute="trailing" constant="12" id="pkb-uw-kT3"/>
                             <constraint firstItem="qOg-LJ-nyc" firstAttribute="top" secondItem="KsA-Jw-b4Y" secondAttribute="bottom" constant="8" symbolic="YES" id="st0-o5-Sqa"/>
+                            <constraint firstItem="ZIL-Yq-Wpj" firstAttribute="trailing" secondItem="hEL-yA-c9U" secondAttribute="trailing" id="tq3-fb-i9B"/>
                             <constraint firstItem="CIN-Gk-zsu" firstAttribute="leading" secondItem="VkL-MB-Q1J" secondAttribute="trailing" constant="75" id="vT0-Qe-8Qf"/>
                             <constraint firstItem="CIN-Gk-zsu" firstAttribute="trailing" secondItem="cAe-Cj-BnS" secondAttribute="trailing" id="vfX-hS-IPO"/>
                             <constraint firstItem="Zfw-uN-9di" firstAttribute="leading" secondItem="BMi-Tb-vpW" secondAttribute="trailing" constant="8" symbolic="YES" id="vzj-LS-97C"/>
+                            <constraint firstItem="vcX-aJ-qkG" firstAttribute="leading" secondItem="mdy-ab-71I" secondAttribute="leading" id="wLS-bA-7tD"/>
                             <constraint firstItem="Zfw-uN-9di" firstAttribute="top" secondItem="BMi-Tb-vpW" secondAttribute="top" id="wZ1-bp-mD0"/>
                             <constraint firstItem="A8j-Db-Cjo" firstAttribute="leading" secondItem="RIB-ns-Ex2" secondAttribute="trailing" constant="8" symbolic="YES" id="x1K-eZ-3yA"/>
                             <constraint firstItem="JL3-uO-oJq" firstAttribute="leading" secondItem="0l5-Eh-SQc" secondAttribute="leading" id="xyQ-kg-ovI"/>
                             <constraint firstItem="OjT-Ly-3Fc" firstAttribute="leading" secondItem="YYL-ZT-ygK" secondAttribute="leading" constant="24" id="y1I-aD-uGQ"/>
                             <constraint firstAttribute="bottom" secondItem="6eh-BY-QOI" secondAttribute="bottom" constant="20" symbolic="YES" id="z6V-uA-w2e"/>
+                            <constraint firstItem="vcX-aJ-qkG" firstAttribute="trailing" secondItem="mdy-ab-71I" secondAttribute="trailing" id="zem-uX-IAl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -3377,7 +3461,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <connections>
-                                                        <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.shopExpense" id="vfS-zS-uGb"/>
+                                                        <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.shopExpense" id="ykQ-gI-RxA"/>
                                                     </connections>
                                                 </tableColumn>
                                             </tableColumns>
@@ -3616,7 +3700,12 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <binding destination="76z-8q-mSa" name="value" keyPath="selection.shopExpense" id="25F-oJ-rla"/>
+                                    <binding destination="76z-8q-mSa" name="hidden" keyPath="selection.nameFilled" id="DGw-xk-FKw">
+                                        <dictionary key="options">
+                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                        </dictionary>
+                                    </binding>
+                                    <binding destination="76z-8q-mSa" name="value" keyPath="selection.shopExpense" id="OSH-Eh-ACw"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="R2V-rD-dUt">

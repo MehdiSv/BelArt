@@ -15,7 +15,7 @@ class Transaction: NSManagedObject {
     @NSManaged var date: NSDate?
     @NSManaged var dateEffet: NSDate
     @NSManaged var montant: NSNumber
-    @NSManaged var nom: String
+    @NSManaged var nom: String?
     @NSManaged var shopExpense: NSNumber
     @NSManaged var achat: Achat
     @NSManaged var client: Client
@@ -47,7 +47,11 @@ class Transaction: NSManagedObject {
         }
         return false
     }
-    
+
+    class func keyPathsForValuesAffectingNameFilled() -> NSArray {
+        return ["nom"]
+    }
+
     class func keyPathsForValuesAffectingHiddenEffet() -> NSArray {
         return ["moyen.moyen"]
     }
@@ -78,5 +82,13 @@ class Transaction: NSManagedObject {
             return nil
         }
     }
-
+    
+    var nameFilled:Bool {
+        get {
+            if let name = nom {
+                return countElements(name) > 0
+            }
+            return false
+        }
+    }
 }

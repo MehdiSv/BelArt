@@ -15,6 +15,7 @@
 		914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914567D81A63E25D00549AFB /* BelArtViewController.swift */; };
 		915647E01A84F74200B58DF3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915647DF1A84F74200B58DF3 /* Category.swift */; };
 		915647EA1A85488300B58DF3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915647E91A85488300B58DF3 /* Transaction.swift */; };
+		915647EE1A857E7A00B58DF3 /* Achat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915647ED1A857E7A00B58DF3 /* Achat.swift */; };
 		9156C2E51A6D3C5E00117C35 /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2E41A6D3C5E00117C35 /* ClientViewController.swift */; };
 		9156C2EA1A6DB5E600117C35 /* AchatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2E81A6DB5E600117C35 /* AchatsViewController.swift */; };
 		9156C2EF1A6DC43D00117C35 /* MoyensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9156C2ED1A6DC43D00117C35 /* MoyensViewController.swift */; };
@@ -25,7 +26,6 @@
 		9175F54F1A835C06000BBBAF /* DepensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175F54D1A835C06000BBBAF /* DepensesViewController.swift */; };
 		91861A441A83CE900068D261 /* BelArt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91861A421A83CE900068D261 /* BelArt.xcdatamodeld */; };
 		91861A461A83D9320068D261 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91861A451A83D9320068D261 /* Article.swift */; };
-		918B57181A795A7F00876D19 /* Achat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B57171A795A7F00876D19 /* Achat.swift */; };
 		918B571B1A7963C200876D19 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B571A1A7963C200876D19 /* Client.swift */; };
 		918B57241A7C16BF00876D19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B57231A7C16BF00876D19 /* Extensions.swift */; };
 		919E968A1A81592B00C5A911 /* ComptesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96891A81592B00C5A911 /* ComptesViewController.swift */; };
@@ -60,6 +60,8 @@
 		915647E81A85479A00B58DF3 /* BelArt 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 4.xcdatamodel"; sourceTree = "<group>"; };
 		915647E91A85488300B58DF3 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = Model/Transaction.swift; sourceTree = "<group>"; };
 		915647EB1A8554CC00B58DF3 /* BelArt 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 5.xcdatamodel"; sourceTree = "<group>"; };
+		915647EC1A857E1B00B58DF3 /* BelArt 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 7.xcdatamodel"; sourceTree = "<group>"; };
+		915647ED1A857E7A00B58DF3 /* Achat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Achat.swift; path = Model/Achat.swift; sourceTree = "<group>"; };
 		9156C2E41A6D3C5E00117C35 /* ClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientViewController.swift; path = Controllers/ClientViewController.swift; sourceTree = "<group>"; };
 		9156C2E81A6DB5E600117C35 /* AchatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AchatsViewController.swift; path = Controllers/AchatsViewController.swift; sourceTree = "<group>"; };
 		9156C2ED1A6DC43D00117C35 /* MoyensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoyensViewController.swift; path = Controllers/MoyensViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 		9175F54D1A835C06000BBBAF /* DepensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DepensesViewController.swift; path = Controllers/DepensesViewController.swift; sourceTree = "<group>"; };
 		91861A431A83CE900068D261 /* BelArt 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 6.xcdatamodel"; sourceTree = "<group>"; };
 		91861A451A83D9320068D261 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
-		918B57171A795A7F00876D19 /* Achat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Achat.swift; path = Model/Achat.swift; sourceTree = "<group>"; };
 		918B571A1A7963C200876D19 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Model/Client.swift; sourceTree = "<group>"; };
 		918B57231A7C16BF00876D19 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
 		919E96891A81592B00C5A911 /* ComptesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComptesViewController.swift; path = Controllers/ComptesViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +107,7 @@
 		914567DC1A63F53700549AFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				918B57171A795A7F00876D19 /* Achat.swift */,
+				915647ED1A857E7A00B58DF3 /* Achat.swift */,
 				91861A451A83D9320068D261 /* Article.swift */,
 				915647DF1A84F74200B58DF3 /* Category.swift */,
 				918B571A1A7963C200876D19 /* Client.swift */,
@@ -310,8 +311,8 @@
 				910BAF221A73BDF800DE25CE /* Vente.swift in Sources */,
 				9156C2E51A6D3C5E00117C35 /* ClientViewController.swift in Sources */,
 				910BAF241A73D42A00DE25CE /* Fournisseur.swift in Sources */,
+				915647EE1A857E7A00B58DF3 /* Achat.swift in Sources */,
 				91752A991A66C27600B6857E /* StockViewController.swift in Sources */,
-				918B57181A795A7F00876D19 /* Achat.swift in Sources */,
 				914567DA1A63E25D00549AFB /* BelArtViewController.swift in Sources */,
 				9156C2EA1A6DB5E600117C35 /* AchatsViewController.swift in Sources */,
 				FBFB09A61A5C9E5E004D4134 /* FournisseursViewController.swift in Sources */,
@@ -531,6 +532,7 @@
 		91861A421A83CE900068D261 /* BelArt.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				915647EC1A857E1B00B58DF3 /* BelArt 7.xcdatamodel */,
 				915647EB1A8554CC00B58DF3 /* BelArt 5.xcdatamodel */,
 				915647E81A85479A00B58DF3 /* BelArt 4.xcdatamodel */,
 				915647E51A853A4A00B58DF3 /* BelArt 3.xcdatamodel */,
@@ -538,7 +540,7 @@
 				915647E21A85197F00B58DF3 /* BelArt 2.xcdatamodel */,
 				91861A431A83CE900068D261 /* BelArt 6.xcdatamodel */,
 			);
-			currentVersion = 915647EB1A8554CC00B58DF3 /* BelArt 5.xcdatamodel */;
+			currentVersion = 915647EC1A857E1B00B58DF3 /* BelArt 7.xcdatamodel */;
 			path = BelArt.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

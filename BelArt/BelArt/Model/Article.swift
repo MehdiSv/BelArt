@@ -12,7 +12,7 @@ import CoreData
 @objc(Article)
 class Article: NSManagedObject {
 
-    @NSManaged var nom: String
+    @NSManaged var nom: String?
     @NSManaged var poids: NSNumber
     @NSManaged var prixAchat: NSNumber
     @NSManaged var prixGr: NSNumber
@@ -27,7 +27,11 @@ class Article: NSManagedObject {
     class func keyPathsForValuesAffectingPrixGr() -> NSArray {
         return ["prixAchat"]
     }
-    
+
+    class func keyPathsForValuesAffectingFullName() -> NSArray {
+        return ["nom", "poids", "category.name"]
+    }
+
     var prixTotal: NSNumber {
         get {
             
@@ -46,8 +50,10 @@ class Article: NSManagedObject {
     
     var fullName: String {
         get {
-            return category.name + " - \(poids)g - " + nom
+            if let name = nom {
+                return category.name + " - \(poids)g - " + name
+            }
+            return ""
         }
     }
-
 }
