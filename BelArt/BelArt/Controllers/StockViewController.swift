@@ -25,7 +25,8 @@ class StockViewController: BelArtViewController {
         for column in tableView.tableColumns {
             (column as NSTableColumn).resizeToFitContents()
         }
-        
     }
+    
+
 }
 

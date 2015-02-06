@@ -1194,7 +1194,7 @@
         <!--Tab View Controller-->
         <scene sceneID="L5w-iX-B22">
             <objects>
-                <tabViewController selectedTabViewItemIndex="3" id="rbQ-4f-BV4" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="9" id="rbQ-4f-BV4" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Achats" id="dPq-J6-mxq"/>
                         <tabViewItem label="Clients" id="5xb-46-Knv"/>
@@ -1205,6 +1205,7 @@
                         <tabViewItem id="yK2-jE-QcH"/>
                         <tabViewItem id="paC-VW-Tch"/>
                         <tabViewItem id="pTj-ga-cq2"/>
+                        <tabViewItem id="LJp-Wx-27p"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="WLu-7q-qQA">
                         <rect key="frame" x="0.0" y="0.0" width="770" height="300"/>
@@ -1222,11 +1223,12 @@
                         <segue destination="dW3-Q1-1cR" kind="relationship" relationship="tabItems" id="Goy-fZ-t8W"/>
                         <segue destination="wns-gc-0Gx" kind="relationship" relationship="tabItems" id="sLn-V7-YxA"/>
                         <segue destination="1lw-bS-NDS" kind="relationship" relationship="tabItems" id="QfK-vm-aFX"/>
+                        <segue destination="PDC-mT-aXd" kind="relationship" relationship="tabItems" id="gxc-j5-8uj"/>
                     </connections>
                 </tabViewController>
                 <customObject id="EMk-pw-C6V" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="751"/>
+            <point key="canvasLocation" x="154" y="751"/>
         </scene>
         <!--Category-->
         <scene sceneID="8ae-k9-iQw">
@@ -2082,7 +2084,7 @@
                         <binding destination="zkE-af-BIC" name="managedObjectContext" keyPath="managedObjectContext" id="8Nt-70-SUS"/>
                     </connections>
                 </arrayController>
-                <arrayController mode="entity" entityName="Article" automaticallyPreparesContent="YES" id="CJ0-s4-JY1" userLabel="ArticleArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
+                <arrayController mode="entity" entityName="Article" fetchPredicateFormat="vente = nil" automaticallyPreparesContent="YES" id="CJ0-s4-JY1" userLabel="ArticleArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
                     <connections>
                         <binding destination="zkE-af-BIC" name="managedObjectContext" keyPath="managedObjectContext" id="K5G-lP-NQs"/>
                         <binding destination="tlr-OQ-e7D" name="sortDescriptors" keyPath="values.sortDescriptors" id="grr-eN-HfX">
@@ -2215,7 +2217,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ktQ-Oz-0Wn">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.029850746268656716" horizontal="YES" id="ktQ-Oz-0Wn">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -3142,7 +3144,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="KbV-yB-rtz" id="8eX-j0-0aI">
-                                            <rect key="frame" x="0.0" y="0.0" width="680" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="742" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3357,8 +3359,8 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 </datePickerCell>
                                 <connections>
-                                    <binding destination="76z-8q-mSa" name="hidden" keyPath="selection.hiddenEffet" id="I83-Qd-aud"/>
                                     <binding destination="76z-8q-mSa" name="value" keyPath="selection.dateEffet" id="SjQ-xl-GWs"/>
+                                    <binding destination="76z-8q-mSa" name="hidden" keyPath="selection.hiddenEffet" id="I83-Qd-aud"/>
                                 </connections>
                             </datePicker>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DVV-u8-c9n">
@@ -3375,8 +3377,8 @@
                                     </menu>
                                 </popUpButtonCell>
                                 <connections>
-                                    <binding destination="PID-Oi-J63" name="content" keyPath="arrangedObjects" id="GUQ-qi-Dbj"/>
                                     <binding destination="PID-Oi-J63" name="contentObjects" keyPath="arrangedObjects" previousBinding="GUQ-qi-Dbj" id="3KD-ZM-KDl"/>
+                                    <binding destination="PID-Oi-J63" name="content" keyPath="arrangedObjects" id="GUQ-qi-Dbj"/>
                                     <binding destination="PID-Oi-J63" name="contentValues" keyPath="arrangedObjects.moyen" previousBinding="3KD-ZM-KDl" id="wOb-GM-5mI"/>
                                     <binding destination="76z-8q-mSa" name="selectedObject" keyPath="selection.moyen" previousBinding="wOb-GM-5mI" id="3sM-Ek-jCv"/>
                                 </connections>
@@ -3453,15 +3455,15 @@
                                     </menu>
                                 </popUpButtonCell>
                                 <connections>
-                                    <binding destination="Bfk-te-HOm" name="content" keyPath="arrangedObjects" id="h0f-5w-mxu"/>
                                     <binding destination="Bfk-te-HOm" name="contentObjects" keyPath="arrangedObjects" previousBinding="h0f-5w-mxu" id="7iH-ib-ywk"/>
+                                    <binding destination="Bfk-te-HOm" name="content" keyPath="arrangedObjects" id="h0f-5w-mxu"/>
                                     <binding destination="Bfk-te-HOm" name="contentValues" keyPath="arrangedObjects.nom" previousBinding="7iH-ib-ywk" id="ODa-fF-3f7"/>
-                                    <binding destination="76z-8q-mSa" name="selectedObject" keyPath="selection.compte" previousBinding="ODa-fF-3f7" id="4ny-yK-Nn2"/>
                                     <binding destination="JG0-En-9jf" name="hidden" keyPath="selectedObjects.@count" id="mev-S8-Jyt">
                                         <dictionary key="options">
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
                                     </binding>
+                                    <binding destination="76z-8q-mSa" name="selectedObject" keyPath="selection.compte" previousBinding="ODa-fF-3f7" id="4ny-yK-Nn2"/>
                                 </connections>
                             </popUpButton>
                         </subviews>
@@ -3526,6 +3528,188 @@
                 <userDefaultsController id="huX-73-K6A"/>
             </objects>
             <point key="canvasLocation" x="1072" y="2293"/>
+        </scene>
+        <!--Statistiques-->
+        <scene sceneID="gxX-JF-2lf">
+            <objects>
+                <viewController title="Statistiques" id="PDC-mT-aXd" customClass="StatisticsViewController" customModule="BelArt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="3b6-9h-L2g">
+                        <rect key="frame" x="0.0" y="0.0" width="938" height="457"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6H-tQ-Z33">
+                                <rect key="frame" x="18" y="420" width="140" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Valeur du stock en Dh" id="hQh-ES-hOz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQ4-Rk-Hcc">
+                                <rect key="frame" x="160" y="420" width="122" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="h1a-0l-cyo">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="A0u-ez-jPA" name="value" keyPath="arrangedObjects.@sum.prixTotal" id="g3o-aP-PMA"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lz-sW-2ff">
+                                <rect key="frame" x="20" y="384" width="22" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Du" id="o1z-Ii-upl">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htc-dm-CU7">
+                                <rect key="frame" x="48" y="381" width="104" height="27"/>
+                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="Aul-t9-FC8">
+                                    <font key="font" metaFont="system"/>
+                                    <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
+                                        <!--1982-02-12 16:00:00 +0000-->
+                                        <timeZone key="timeZone" name="US/Pacific"/>
+                                    </calendarDate>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                </datePickerCell>
+                                <connections>
+                                    <action selector="fromSellDateDone:" target="PDC-mT-aXd" id="Oir-WY-32k"/>
+                                    <outlet property="formatter" destination="dxw-bU-E9V" id="V1w-Lw-WBE"/>
+                                </connections>
+                            </datePicker>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z3q-db-6Im">
+                                <rect key="frame" x="157" y="384" width="19" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="au" id="26e-nh-Ff3">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oh8-Tx-urB">
+                                <rect key="frame" x="182" y="381" width="104" height="27"/>
+                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="BlW-jx-0NA">
+                                    <font key="font" metaFont="system"/>
+                                    <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
+                                        <!--1982-02-12 16:00:00 +0000-->
+                                        <timeZone key="timeZone" name="US/Pacific"/>
+                                    </calendarDate>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                </datePickerCell>
+                                <connections>
+                                    <action selector="toSellDateDone:" target="PDC-mT-aXd" id="KdF-r1-vGa"/>
+                                    <outlet property="formatter" destination="dxw-bU-E9V" id="oLz-52-DZU"/>
+                                </connections>
+                            </datePicker>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lm6-Gd-Q5D">
+                                <rect key="frame" x="165" y="356" width="93" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="3yi-zR-nws">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="PDC-mT-aXd" name="value" keyPath="totalValueSoldDuringPeriod" id="bRC-pe-vHG"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXE-mq-vAZ">
+                                <rect key="frame" x="20" y="356" width="79" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Vente en Dh" id="qw8-ef-fgN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-1c-sww">
+                                <rect key="frame" x="20" y="331" width="135" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Vente effective en Dh" id="kGm-vl-6jv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4iM-qG-F98">
+                                <rect key="frame" x="165" y="331" width="93" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="94R-av-ktW">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="PDC-mT-aXd" name="value" keyPath="totalEffectiveValueSoldDuringPeriod" id="1yt-BT-YcJ"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbQ-N3-sgK">
+                                <rect key="frame" x="18" y="306" width="83" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Marge en Dh" id="vot-ls-Tci">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ks-pP-LHE">
+                                <rect key="frame" x="18" y="254" width="83" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Effets en Dh" id="Og3-rS-Rj1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-0O-wtL">
+                                <rect key="frame" x="165" y="306" width="93" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="uJx-Zv-xdj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="PDC-mT-aXd" name="value" keyPath="totalMargeValueSoldDuringPeriod" id="sfw-J1-y5U"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZv-Ml-eL0">
+                                <rect key="frame" x="165" y="254" width="93" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="GIA-p3-UrU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="PDC-mT-aXd" name="value" keyPath="totalEffets" id="SyD-gT-gMX"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="articlesAC" destination="A0u-ez-jPA" id="rup-dL-yOS"/>
+                        <outlet property="fromSellDate" destination="htc-dm-CU7" id="hdw-2i-iTR"/>
+                        <outlet property="sellValue" destination="lm6-Gd-Q5D" id="nGY-lz-NQZ"/>
+                        <outlet property="toSellDate" destination="oh8-Tx-urB" id="Lzr-tT-Ov7"/>
+                        <outlet property="transactionsAC" destination="3f8-Wa-UbR" id="CyB-He-jXG"/>
+                        <outlet property="ventesAC" destination="vbD-Kl-d9G" id="hSa-dT-bha"/>
+                    </connections>
+                </viewController>
+                <customObject id="o96-e3-L7L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController mode="entity" entityName="Transaction" fetchPredicateFormat="vente = nil" automaticallyPreparesContent="YES" id="3f8-Wa-UbR" userLabel="TransactionsArrayController">
+                    <connections>
+                        <binding destination="PDC-mT-aXd" name="managedObjectContext" keyPath="managedObjectContext" id="3BW-eP-2zw"/>
+                    </connections>
+                </arrayController>
+                <arrayController mode="entity" entityName="Vente" automaticallyPreparesContent="YES" id="vbD-Kl-d9G" userLabel="VentesArrayController">
+                    <connections>
+                        <binding destination="PDC-mT-aXd" name="managedObjectContext" keyPath="managedObjectContext" id="kh1-wY-0Q4"/>
+                    </connections>
+                </arrayController>
+                <dateFormatter dateStyle="short" id="dxw-bU-E9V"/>
+                <arrayController mode="entity" entityName="Article" fetchPredicateFormat="vente = nil" automaticallyPreparesContent="YES" id="A0u-ez-jPA" userLabel="ArticlesArrayController">
+                    <connections>
+                        <binding destination="PDC-mT-aXd" name="managedObjectContext" keyPath="managedObjectContext" id="tED-Mb-4RI"/>
+                    </connections>
+                </arrayController>
+            </objects>
+            <point key="canvasLocation" x="1067" y="2939.5"/>
         </scene>
     </scenes>
     <resources>
