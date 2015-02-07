@@ -26,7 +26,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let urls = NSFileManager.defaultManager().URLsForDirectory(.ApplicationSupportDirectory, inDomains: .UserDomainMask)
         
         let appSupportURL = urls[urls.count - 1] as NSURL
-        println(urls)
         return appSupportURL.URLByAppendingPathComponent("MS.BelArt")
     }()
 

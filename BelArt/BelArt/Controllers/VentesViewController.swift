@@ -18,12 +18,16 @@ class VentesViewController: BelArtViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        let sd = NSSortDescriptor(key: "fullName", ascending: true)
-        articlesAC.sortDescriptors = [sd]
-     
+      
         ventesAC.addObserver(self, forKeyPath: "arrangedObjects", options: NSKeyValueObservingOptions.New, context: nil)
         transactionsAC.addObserver(self, forKeyPath: "arrangedObjects", options: NSKeyValueObservingOptions.New, context: nil)
+    }
+    
+    override func viewWillAppear() {
+        let sd = NSSortDescriptor(key: "fullName", ascending: true)
+        articlesAC.sortDescriptors = [sd]
+        
+        articlesAC.rearrangeObjects()
     }
  
     override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
