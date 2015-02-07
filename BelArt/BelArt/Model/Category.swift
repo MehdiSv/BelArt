@@ -12,7 +12,7 @@ import CoreData
 @objc(Category)
 class Category: NSManagedObject {
 
-    @NSManaged var name: String
+    @NSManaged var name: String?
     @NSManaged var articles: NSSet
 
     var sold:Int {

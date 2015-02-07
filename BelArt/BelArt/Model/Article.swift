@@ -51,7 +51,9 @@ class Article: NSManagedObject {
     var fullName: String {
         get {
             if let name = nom {
-                return category.name + " - \(poids)g - " + name
+                if let categoryName = category.name {
+                    return categoryName + " - \(poids)g - " + name
+                }
             }
             return ""
         }
