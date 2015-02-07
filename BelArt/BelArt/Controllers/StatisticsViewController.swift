@@ -53,6 +53,7 @@ class StatisticsViewController: BelArtViewController {
         self.willChangeValueForKey("restExpenses")
         
         for transaction in transactionsAC.arrangedObjects as [Transaction] {
+            
             if transaction.nom != nil {
                 if transaction.shopExpense == true {
                     shopExpenses += transaction.montant.floatValue
