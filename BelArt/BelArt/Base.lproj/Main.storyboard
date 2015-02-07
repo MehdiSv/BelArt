@@ -198,13 +198,13 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" autosaveName="" rowHeight="50" headerView="QX4-8L-sK0" id="fuK-kf-ujS">
-                                            <rect key="frame" x="0.0" y="0.0" width="750" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="513" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="76" minWidth="40" maxWidth="1000" id="Lcb-El-nYx">
+                                                <tableColumn width="104.5" minWidth="40" maxWidth="1000" id="Lcb-El-nYx">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Prenom">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -221,7 +221,7 @@
                                                         <binding destination="wQK-Je-sxX" name="value" keyPath="arrangedObjects.prenom" id="UMD-mn-MMK"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="3i7-0u-3fA">
+                                                <tableColumn width="92.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="3i7-0u-3fA">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Nom">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -238,7 +238,7 @@
                                                         <binding destination="wQK-Je-sxX" name="value" keyPath="arrangedObjects.nom" id="OxZ-P0-atH"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="BSX-Nb-cDZ">
+                                                <tableColumn width="92" minWidth="10" maxWidth="3.4028234663852886e+38" id="BSX-Nb-cDZ">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Balance">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -255,7 +255,7 @@
                                                         <binding destination="wQK-Je-sxX" name="value" keyPath="arrangedObjects.balance" id="8k7-wV-JQN"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="JWT-Rn-vDE">
+                                                <tableColumn width="92" minWidth="10" maxWidth="3.4028234663852886e+38" id="JWT-Rn-vDE">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Tél">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -272,7 +272,7 @@
                                                         <binding destination="wQK-Je-sxX" name="value" keyPath="arrangedObjects.tel" id="gqb-SJ-OZu"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="132" minWidth="10" maxWidth="3.4028234663852886e+38" id="03T-zD-Hvg">
+                                                <tableColumn width="160.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="03T-zD-Hvg">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Email">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -289,7 +289,7 @@
                                                         <binding destination="wQK-Je-sxX" name="value" keyPath="arrangedObjects.email" id="Ttk-BC-6Bn"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="95" minWidth="10" maxWidth="3.4028234663852886e+38" id="Zl0-Id-WVF">
+                                                <tableColumn width="123.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="Zl0-Id-WVF">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Total Achats">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -636,7 +636,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.015873015873015872" horizontal="YES" id="3qs-P1-eHt">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="3qs-P1-eHt">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1261,7 +1261,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="h3X-5R-pm2" id="v6A-zo-UNM">
-                                            <rect key="frame" x="0.0" y="0.0" width="615" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="527" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1315,7 +1315,7 @@
                                                         <binding destination="oiS-P3-s7M" name="value" keyPath="arrangedObjects.amountSold" id="9hK-F8-dUD"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="jj9-D6-vic">
+                                                <tableColumn width="152" minWidth="10" maxWidth="3.4028234663852886e+38" id="jj9-D6-vic">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Marge">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2186,13 +2186,13 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="TqJ-Qv-nj3" id="VfF-wv-MVw">
-                                            <rect key="frame" x="0.0" y="0.0" width="750" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="638" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="76" minWidth="40" maxWidth="1000" id="xR7-Sw-1RE">
+                                                <tableColumn width="81.5" minWidth="40" maxWidth="1000" id="xR7-Sw-1RE">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Prenom">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2208,7 +2208,7 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.prenom" id="7pY-9J-xZ3"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="nay-Dq-Hmd">
+                                                <tableColumn width="69.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="nay-Dq-Hmd">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Nom">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2224,7 +2224,7 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.nom" id="EYQ-4a-Nxd"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="t5x-xm-o1s">
+                                                <tableColumn width="69.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="t5x-xm-o1s">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Dette">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2240,7 +2240,7 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.balance" id="MOH-Pu-E0C"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="40E-qf-hUG">
+                                                <tableColumn width="69.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="40E-qf-hUG">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Tél">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2256,7 +2256,7 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.tel" id="Jqw-Sj-ABa"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="86" minWidth="10" maxWidth="3.4028234663852886e+38" id="jeM-Ud-Y60">
+                                                <tableColumn width="92" minWidth="10" maxWidth="3.4028234663852886e+38" id="jeM-Ud-Y60">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Email">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2272,7 +2272,7 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.email" id="KYC-MS-3nZ"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="77" minWidth="10" maxWidth="3.4028234663852886e+38" id="nnV-I7-NmF">
+                                                <tableColumn width="83" minWidth="10" maxWidth="3.4028234663852886e+38" id="nnV-I7-NmF">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Total Achats">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2288,7 +2288,7 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.totalBuyings" id="nOn-X8-32e"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="76" minWidth="10" maxWidth="3.4028234663852886e+38" id="UJf-CK-RdL">
+                                                <tableColumn width="82" minWidth="10" maxWidth="3.4028234663852886e+38" id="UJf-CK-RdL">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Total Ventes">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2304,7 +2304,7 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.totalSold" id="HME-gy-q5K"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="107" minWidth="10" maxWidth="3.4028234663852886e+38" id="Ch8-Ry-HjM">
+                                                <tableColumn width="112" minWidth="10" maxWidth="3.4028234663852886e+38" id="Ch8-Ry-HjM">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Marge des Ventes">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2525,7 +2525,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="9Qc-r4-ePk" id="iAO-kd-EjR">
-                                            <rect key="frame" x="0.0" y="0.0" width="344" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2655,7 +2655,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.125" horizontal="YES" id="Wd6-BO-AcL">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="Wd6-BO-AcL">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -3340,13 +3340,13 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="KbV-yB-rtz" id="8eX-j0-0aI">
-                                            <rect key="frame" x="0.0" y="0.0" width="742" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="581" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="112" minWidth="10" maxWidth="3.4028234663852886e+38" id="O76-hO-Jr6">
+                                                <tableColumn width="135" minWidth="10" maxWidth="3.4028234663852886e+38" id="O76-hO-Jr6">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Depense">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -3362,7 +3362,7 @@
                                                         <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.nom" id="KWT-0N-pKg"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="78" minWidth="40" maxWidth="1000" id="I0f-ev-ELD">
+                                                <tableColumn width="101" minWidth="40" maxWidth="1000" id="I0f-ev-ELD">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Montant">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -3378,7 +3378,7 @@
                                                         <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.montant" id="XgU-Wt-ikC"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="80.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="ueh-b6-xtn">
+                                                <tableColumn width="103.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="ueh-b6-xtn">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Compte">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -3394,7 +3394,7 @@
                                                         <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.compte.nom" id="p79-AF-10h"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="79" minWidth="10" maxWidth="3.4028234663852886e+38" id="46r-Ca-oHp">
+                                                <tableColumn width="102" minWidth="10" maxWidth="3.4028234663852886e+38" id="46r-Ca-oHp">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Moyen">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -3410,7 +3410,7 @@
                                                         <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.moyen.moyen" id="mwZ-IQ-9im"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="82.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="hx1-ac-TEQ">
+                                                <tableColumn width="106" minWidth="10" maxWidth="3.4028234663852886e+38" id="hx1-ac-TEQ">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Date">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -3429,7 +3429,7 @@
                                                         <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.date" id="8Wr-bn-s3Q"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZiF-3E-FbX">
+                                                <tableColumn width="87.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZiF-3E-FbX">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Date Effet">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -3448,7 +3448,7 @@
                                                         <binding destination="76z-8q-mSa" name="value" keyPath="arrangedObjects.dateEffetAvailable" id="7ts-2k-svU"/>
                                                     </connections>
                                                 </tableColumn>
-                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="3AN-Zr-qKp">
+                                                <tableColumn width="86" minWidth="10" maxWidth="3.4028234663852886e+38" id="3AN-Zr-qKp">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Magasin">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -3936,6 +3936,44 @@
                                 </textFieldCell>
                                 <connections>
                                     <binding destination="PDC-mT-aXd" name="value" keyPath="totalEffets" id="SyD-gT-gMX"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uub-2a-4dy">
+                                <rect key="frame" x="18" y="229" width="141" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dépenses du Magasin" id="XSa-bT-Z9u">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YbE-mU-qFJ">
+                                <rect key="frame" x="165" y="229" width="93" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="2yh-WF-eKi">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="PDC-mT-aXd" name="value" keyPath="shopExpenses" id="8qU-q7-HpX"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esj-Jw-evK">
+                                <rect key="frame" x="18" y="204" width="94" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mes dépenses" id="e0n-0s-Byd">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kXD-cv-49k">
+                                <rect key="frame" x="165" y="204" width="93" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="t4S-ax-yeV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="PDC-mT-aXd" name="value" keyPath="souadExpenses" id="u7U-e0-dnp"/>
                                 </connections>
                             </textField>
                         </subviews>

@@ -17,11 +17,11 @@ class Transaction: NSManagedObject {
     @NSManaged var montant: NSNumber
     @NSManaged var nom: String?
     @NSManaged var shopExpense: NSNumber
-    @NSManaged var achat: Achat
+    @NSManaged var achat: Achat?
     @NSManaged var client: Client
     @NSManaged var compte: Compte
     @NSManaged var moyen: Moyen?
-    @NSManaged var vente: Vente
+    @NSManaged var vente: Vente?
 
     var price:NSNumber {
         get {

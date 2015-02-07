@@ -21,6 +21,8 @@ class StatisticsViewController: BelArtViewController {
     var totalEffectiveValueSoldDuringPeriod:Float = 0
     var totalMargeValueSoldDuringPeriod:Float = 0
     var totalEffets:Float = 0
+    var shopExpenses:Float = 0
+    var souadExpenses:Float = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,33 @@ class StatisticsViewController: BelArtViewController {
         
         calculateSellValues()
         calculateTransactionsValues()
+        calculateExpenses()
+    }
+    
+    func calculateExpenses() {
+        
+        let predicate = NSPredicate(format: "date >= %@ && date <= %@", fromSellDate.dateValue, toSellDate.dateValue)
+        
+        transactionsAC.filterPredicate = predicate
+
+        shopExpenses = 0
+        souadExpenses = 0
+        
+        self.willChangeValueForKey("shopExpenses")
+        self.willChangeValueForKey("souadExpenses")
+        
+        for transaction in transactionsAC.arrangedObjects as [Transaction] {
+            if transaction.nom != nil && transaction.shopExpense == true {
+                shopExpenses += transaction.montant.floatValue
+            }
+            else if transaction.shopExpense == false && transaction.nom?.lowercaseString == "souad" {
+                souadExpenses += transaction.montant.floatValue
+            }
+        }
+        
+        self.didChangeValueForKey("shopExpenses")
+        self.didChangeValueForKey("souadExpenses")
+
     }
     
     func calculateSellValues() {
@@ -77,11 +106,13 @@ class StatisticsViewController: BelArtViewController {
     @IBAction func fromSellDateDone(sender: AnyObject) {
         calculateSellValues()
         calculateTransactionsValues()
+        calculateExpenses()
     }
     
     @IBAction func toSellDateDone(sender: AnyObject) {
         calculateSellValues()
         calculateTransactionsValues()
+        calculateExpenses()
     }
     
 }
