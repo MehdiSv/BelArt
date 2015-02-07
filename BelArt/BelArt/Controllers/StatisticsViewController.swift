@@ -21,8 +21,10 @@ class StatisticsViewController: BelArtViewController {
     var totalEffectiveValueSoldDuringPeriod:Float = 0
     var totalMargeValueSoldDuringPeriod:Float = 0
     var totalEffets:Float = 0
+    
     var shopExpenses:Float = 0
     var souadExpenses:Float = 0
+    var restExpenses:Float = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,22 +46,28 @@ class StatisticsViewController: BelArtViewController {
 
         shopExpenses = 0
         souadExpenses = 0
+        restExpenses = 0
         
         self.willChangeValueForKey("shopExpenses")
         self.willChangeValueForKey("souadExpenses")
+        self.willChangeValueForKey("restExpenses")
         
         for transaction in transactionsAC.arrangedObjects as [Transaction] {
-            if transaction.nom != nil && transaction.shopExpense == true {
-                shopExpenses += transaction.montant.floatValue
-            }
-            else if transaction.shopExpense == false && transaction.nom?.lowercaseString == "souad" {
-                souadExpenses += transaction.montant.floatValue
+            if transaction.nom != nil {
+                if transaction.shopExpense == true {
+                    shopExpenses += transaction.montant.floatValue
+                }
+                else if transaction.shopExpense == false && transaction.nom?.lowercaseString == "souad" {
+                    souadExpenses += transaction.montant.floatValue
+                } else {
+                    restExpenses += transaction.montant.floatValue
+                }
             }
         }
         
         self.didChangeValueForKey("shopExpenses")
         self.didChangeValueForKey("souadExpenses")
-
+        self.didChangeValueForKey("restExpenses")
     }
     
     func calculateSellValues() {

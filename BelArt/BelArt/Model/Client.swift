@@ -2,7 +2,7 @@
 //  Client.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 28/01/15.
+//  Created by Mehdi Sqalli on 07/02/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -16,19 +16,25 @@ class Client: NSManagedObject {
     @NSManaged var nom: String?
     @NSManaged var prenom: String
     @NSManaged var tel: String
+    @NSManaged var reportDette: NSNumber
     @NSManaged var achats: NSSet
     @NSManaged var transactions: NSSet
 
     var balance:NSNumber {
         get {
-            return valueForKeyPath("achats.@sum.balance") as NSNumber
+            let balanceAchats = valueForKeyPath("achats.@sum.balance") as NSNumber
+            return balanceAchats.floatValue + reportDette.floatValue
         }
     }
-    
+
+    class func keyPathsForValuesAffectingBalance() -> NSArray {
+        return ["reportDette"]
+    }
+
     class func keyPathsForValuesAffectingFullName() -> NSArray {
         return ["nom", "prenom"]
     }
-
+    
     
     var fullName:String {
         
@@ -40,7 +46,7 @@ class Client: NSManagedObject {
         }
         
     }
-
+    
     var buyings:Float {
         get {
             
@@ -55,5 +61,5 @@ class Client: NSManagedObject {
             
         }
     }
-    
+
 }

@@ -198,7 +198,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" autosaveName="" rowHeight="50" headerView="QX4-8L-sK0" id="fuK-kf-ujS">
-                                            <rect key="frame" x="0.0" y="0.0" width="513" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="683" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -305,6 +305,22 @@
                                                         <binding destination="wQK-Je-sxX" name="value" keyPath="arrangedObjects.buyings" id="4o2-Ac-DYK"/>
                                                     </connections>
                                                 </tableColumn>
+                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="msw-hI-C8V">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Report Dette">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" title="Text Cell" id="vMC-dd-wva">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <connections>
+                                                        <binding destination="wQK-Je-sxX" name="value" keyPath="arrangedObjects.reportDette" id="GUS-aP-S2y"/>
+                                                    </connections>
+                                                </tableColumn>
                                             </tableColumns>
                                             <connections>
                                                 <outlet property="dataSource" destination="IS2-53-iL9" id="XsB-dG-O3c"/>
@@ -314,7 +330,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.037313432835820892" horizontal="YES" id="MPL-XX-G1g">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="MPL-XX-G1g">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -449,15 +465,38 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hHY-gb-aZk">
+                                <rect key="frame" x="724" y="160" width="83" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Report Dette" id="8PF-W3-ENC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NFs-ZM-rmr">
+                                <rect key="frame" x="722" y="130" width="176" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="acm-pk-dob">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="OfO-YW-PXB"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="wQK-Je-sxX" name="value" keyPath="selection.reportDette" id="uxf-3J-psJ"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="9Du-EO-oei" firstAttribute="width" secondItem="TbI-5a-l6q" secondAttribute="width" id="1wz-hR-RmC"/>
+                            <constraint firstItem="NFs-ZM-rmr" firstAttribute="top" secondItem="hHY-gb-aZk" secondAttribute="bottom" constant="8" symbolic="YES" id="25t-Zi-9Dw"/>
                             <constraint firstItem="I6A-7V-xzT" firstAttribute="leading" secondItem="Q3U-pQ-C3m" secondAttribute="trailing" constant="8" id="2qW-Rh-BoF"/>
                             <constraint firstItem="Y1Q-UW-Q9b" firstAttribute="leading" secondItem="I6A-7V-xzT" secondAttribute="trailing" constant="10" id="58K-Mq-OKT"/>
                             <constraint firstItem="Q3U-pQ-C3m" firstAttribute="top" secondItem="vIa-IL-eoB" secondAttribute="top" constant="22" id="5Pu-HL-h7J"/>
                             <constraint firstItem="kK7-5Z-djY" firstAttribute="leading" secondItem="I6A-7V-xzT" secondAttribute="trailing" constant="8" id="6Fh-Rb-M0z"/>
                             <constraint firstItem="jJ8-1f-g40" firstAttribute="top" secondItem="VYz-Cl-cYw" secondAttribute="bottom" constant="8" id="7ZW-hL-68l"/>
                             <constraint firstItem="9Du-EO-oei" firstAttribute="top" secondItem="oun-hZ-ELb" secondAttribute="bottom" constant="8" id="8di-Jd-dhf"/>
+                            <constraint firstItem="hHY-gb-aZk" firstAttribute="top" secondItem="TbI-5a-l6q" secondAttribute="bottom" constant="12" id="9yX-6p-IgB"/>
+                            <constraint firstItem="NFs-ZM-rmr" firstAttribute="trailing" secondItem="TbI-5a-l6q" secondAttribute="trailing" id="BFQ-uP-urZ"/>
                             <constraint firstItem="Q3U-pQ-C3m" firstAttribute="leading" secondItem="vIa-IL-eoB" secondAttribute="leading" constant="20" id="E6O-mB-F1w"/>
                             <constraint firstAttribute="bottom" secondItem="I6A-7V-xzT" secondAttribute="bottom" constant="13" id="E7s-bh-6zT"/>
                             <constraint firstItem="VYz-Cl-cYw" firstAttribute="top" secondItem="Y1Q-UW-Q9b" secondAttribute="bottom" constant="8" id="F8P-jl-ewJ"/>
@@ -465,6 +504,7 @@
                             <constraint firstItem="D49-aT-1ty" firstAttribute="leading" secondItem="1bo-bB-oew" secondAttribute="trailing" constant="8" id="KF7-Tc-eio"/>
                             <constraint firstItem="TbI-5a-l6q" firstAttribute="leading" secondItem="I6A-7V-xzT" secondAttribute="trailing" constant="8" id="Mp7-fs-5Ao"/>
                             <constraint firstItem="kK7-5Z-djY" firstAttribute="top" secondItem="rPh-YB-IBS" secondAttribute="bottom" constant="8" id="N57-z8-O8g"/>
+                            <constraint firstItem="hHY-gb-aZk" firstAttribute="leading" secondItem="I6A-7V-xzT" secondAttribute="trailing" constant="12" id="XJN-uO-1k7"/>
                             <constraint firstItem="9Du-EO-oei" firstAttribute="width" secondItem="VYz-Cl-cYw" secondAttribute="width" id="YrL-g8-DyF"/>
                             <constraint firstItem="Y1Q-UW-Q9b" firstAttribute="top" secondItem="9Du-EO-oei" secondAttribute="bottom" constant="8" id="YsY-W2-eXi"/>
                             <constraint firstItem="9Du-EO-oei" firstAttribute="leading" secondItem="I6A-7V-xzT" secondAttribute="trailing" constant="8" id="ZCU-j4-xxB"/>
@@ -483,6 +523,7 @@
                             <constraint firstItem="I6A-7V-xzT" firstAttribute="leading" secondItem="D49-aT-1ty" secondAttribute="trailing" constant="8" id="sJH-FZ-paP"/>
                             <constraint firstItem="jJ8-1f-g40" firstAttribute="leading" secondItem="I6A-7V-xzT" secondAttribute="trailing" constant="10" id="xBK-wB-iNX"/>
                             <constraint firstAttribute="trailing" secondItem="Q3U-pQ-C3m" secondAttribute="trailing" constant="213" id="xPr-10-biW"/>
+                            <constraint firstItem="NFs-ZM-rmr" firstAttribute="leading" secondItem="TbI-5a-l6q" secondAttribute="leading" id="yvc-f4-9VG"/>
                             <constraint firstItem="VYz-Cl-cYw" firstAttribute="leading" secondItem="I6A-7V-xzT" secondAttribute="trailing" constant="8" id="ywT-0W-4uF"/>
                         </constraints>
                     </view>
@@ -636,7 +677,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="3qs-P1-eHt">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.016" horizontal="YES" id="3qs-P1-eHt">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1261,7 +1302,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="h3X-5R-pm2" id="v6A-zo-UNM">
-                                            <rect key="frame" x="0.0" y="0.0" width="527" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="615" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2186,7 +2227,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="TqJ-Qv-nj3" id="VfF-wv-MVw">
-                                            <rect key="frame" x="0.0" y="0.0" width="638" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="683" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2225,7 +2266,7 @@
                                                     </connections>
                                                 </tableColumn>
                                                 <tableColumn width="69.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="t5x-xm-o1s">
-                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Dette">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Balance">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -2320,6 +2361,22 @@
                                                         <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.totalSoldMarge" id="SNH-Gs-9yz"/>
                                                     </connections>
                                                 </tableColumn>
+                                                <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="2Pc-NB-ZeM">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Report Dette">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" title="Text Cell" id="Olt-HE-9gN">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <connections>
+                                                        <binding destination="YG3-yk-n2U" name="value" keyPath="arrangedObjects.reportDette" id="pLw-RQ-juI"/>
+                                                    </connections>
+                                                </tableColumn>
                                             </tableColumns>
                                             <connections>
                                                 <outlet property="dataSource" destination="IS2-53-iL9" id="WLu-Rl-7qF"/>
@@ -2329,7 +2386,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.037593984962406013" horizontal="YES" id="ktQ-Oz-0Wn">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ktQ-Oz-0Wn">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -2436,6 +2493,14 @@
                                     <binding destination="YG3-yk-n2U" name="value" keyPath="selection.email" id="9Zv-Ve-zBk"/>
                                 </connections>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-HX-nz4">
+                                <rect key="frame" x="724" y="163" width="83" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Report Dette" id="usC-6U-c1Y">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Ole-5u-kaf">
                                 <rect key="frame" x="575" y="17" width="64" height="65"/>
                                 <constraints>
@@ -2464,15 +2529,30 @@
                                     <action selector="remove:" target="YG3-yk-n2U" id="G0k-Q1-nP8"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sbN-lT-Ekq">
+                                <rect key="frame" x="722" y="133" width="176" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="zm3-Lf-xVk">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="6Fk-ms-xZA"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="YG3-yk-n2U" name="value" keyPath="selection.reportDette" id="2ia-UD-j5P"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Bsu-X4-Szj" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="8" id="3Nc-8k-Bwl"/>
                             <constraint firstAttribute="trailing" secondItem="1qG-30-WdH" secondAttribute="trailing" constant="20" id="5PK-XY-kdy"/>
                             <constraint firstItem="4rg-sp-qXb" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="10" id="5Xa-cf-49b"/>
                             <constraint firstItem="1qG-30-WdH" firstAttribute="top" secondItem="4rg-sp-qXb" secondAttribute="bottom" constant="8" id="5p9-QR-eAG"/>
+                            <constraint firstItem="sbN-lT-Ekq" firstAttribute="trailing" secondItem="GhJ-cv-IKS" secondAttribute="trailing" id="5rl-cs-zAx"/>
                             <constraint firstItem="D8X-Gh-aM8" firstAttribute="top" secondItem="Bua-iK-1oT" secondAttribute="top" constant="12" id="5v5-OF-iXN"/>
+                            <constraint firstItem="hcl-HX-nz4" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="12" id="67U-Dw-UWc"/>
                             <constraint firstItem="D1r-us-PMQ" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="10" id="67v-nU-XjU"/>
                             <constraint firstItem="4yQ-oO-9Ss" firstAttribute="leading" secondItem="Ole-5u-kaf" secondAttribute="trailing" constant="8" id="6Cj-U4-MVD"/>
+                            <constraint firstItem="sbN-lT-Ekq" firstAttribute="leading" secondItem="GhJ-cv-IKS" secondAttribute="leading" id="9U5-uV-CY1"/>
                             <constraint firstItem="lEn-AZ-lM3" firstAttribute="height" secondItem="1qG-30-WdH" secondAttribute="height" id="Bhm-dl-LBU"/>
                             <constraint firstItem="4yQ-oO-9Ss" firstAttribute="top" secondItem="SWg-Rt-a0h" secondAttribute="bottom" constant="8" id="E8E-FV-8dU"/>
                             <constraint firstItem="D8X-Gh-aM8" firstAttribute="leading" secondItem="4yQ-oO-9Ss" secondAttribute="trailing" constant="8" id="JlX-lH-SRP"/>
@@ -2482,6 +2562,8 @@
                             <constraint firstAttribute="bottom" secondItem="D8X-Gh-aM8" secondAttribute="bottom" constant="20" id="MKd-aP-lQz"/>
                             <constraint firstItem="Fek-e8-Ufm" firstAttribute="top" secondItem="Bsu-X4-Szj" secondAttribute="bottom" constant="8" id="NPf-wt-CQs"/>
                             <constraint firstItem="lEn-AZ-lM3" firstAttribute="height" secondItem="GhJ-cv-IKS" secondAttribute="height" id="Qam-9Q-gPt"/>
+                            <constraint firstItem="hcl-HX-nz4" firstAttribute="top" secondItem="GhJ-cv-IKS" secondAttribute="bottom" constant="16" id="Qc6-QT-KLe"/>
+                            <constraint firstItem="sbN-lT-Ekq" firstAttribute="top" secondItem="hcl-HX-nz4" secondAttribute="bottom" constant="8" symbolic="YES" id="Ra0-Nk-Y5h"/>
                             <constraint firstItem="D1r-us-PMQ" firstAttribute="top" secondItem="1qG-30-WdH" secondAttribute="bottom" constant="8" id="Xce-Qo-3Rh"/>
                             <constraint firstItem="EW1-Hx-1JN" firstAttribute="leading" secondItem="D8X-Gh-aM8" secondAttribute="trailing" constant="10" id="XxE-Ju-IUK"/>
                             <constraint firstAttribute="bottom" secondItem="Ole-5u-kaf" secondAttribute="bottom" constant="20" id="Y89-uC-7rW"/>
@@ -2655,7 +2737,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="Wd6-BO-AcL">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.068965517241379309" horizontal="YES" id="Wd6-BO-AcL">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -3340,7 +3422,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="KbV-yB-rtz" id="8eX-j0-0aI">
-                                            <rect key="frame" x="0.0" y="0.0" width="581" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="742" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3974,6 +4056,25 @@
                                 </textFieldCell>
                                 <connections>
                                     <binding destination="PDC-mT-aXd" name="value" keyPath="souadExpenses" id="u7U-e0-dnp"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VES-Od-8Wl">
+                                <rect key="frame" x="18" y="179" width="114" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dépenses Maison" id="uzJ-iz-iaq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWs-np-UJj">
+                                <rect key="frame" x="165" y="179" width="93" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="LlC-MH-rBI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="PDC-mT-aXd" name="value" keyPath="restExpenses" id="ocP-iP-T1e"/>
                                 </connections>
                             </textField>
                         </subviews>
