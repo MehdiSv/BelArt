@@ -198,7 +198,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" autosaveName="" rowHeight="50" headerView="QX4-8L-sK0" id="fuK-kf-ujS">
-                                            <rect key="frame" x="0.0" y="0.0" width="683" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="750" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,7 +330,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="MPL-XX-G1g">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.014818906985080349" horizontal="YES" id="MPL-XX-G1g">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -677,7 +677,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.016" horizontal="YES" id="3qs-P1-eHt">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="3qs-P1-eHt">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -791,7 +791,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.94979268565972275" horizontal="YES" id="bSc-NV-v0a">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.94979268565972275" horizontal="YES" id="bSc-NV-v0a">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1220,8 +1220,12 @@
                 <customObject id="PtH-aC-ztc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController mode="entity" entityName="Transaction" automaticallyPreparesContent="YES" id="Zyi-cU-9rY" userLabel="TransactionsArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
                     <connections>
+                        <binding destination="pUG-l1-D5W" name="contentSet" keyPath="selection.transactions" id="Ljd-Vj-Bjl">
+                            <dictionary key="options">
+                                <bool key="NSDeletesObjectsOnRemove" value="YES"/>
+                            </dictionary>
+                        </binding>
                         <binding destination="Kn9-8j-oD1" name="managedObjectContext" keyPath="managedObjectContext" id="zmS-oc-vcs"/>
-                        <binding destination="pUG-l1-D5W" name="contentSet" keyPath="selection.transactions" id="wjP-xC-07K"/>
                     </connections>
                 </arrayController>
                 <arrayController mode="entity" entityName="Vente" automaticallyPreparesContent="YES" id="pUG-l1-D5W" userLabel="VentesArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
@@ -1381,7 +1385,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="BqC-a2-Mik">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="BqC-a2-Mik">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1533,7 +1537,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ju6-Kj-ea1">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ju6-Kj-ea1">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1718,7 +1722,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="LAw-Lo-YHj">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="LAw-Lo-YHj">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -1922,7 +1926,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ReR-kE-Bm0">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="ReR-kE-Bm0">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -2227,7 +2231,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="50" headerView="TqJ-Qv-nj3" id="VfF-wv-MVw">
-                                            <rect key="frame" x="0.0" y="0.0" width="683" height="52"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="750" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2737,7 +2741,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.068965517241379309" horizontal="YES" id="Wd6-BO-AcL">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="Wd6-BO-AcL">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -2866,7 +2870,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="kmR-Wv-zGz">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="kmR-Wv-zGz">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -3390,8 +3394,12 @@
                 </arrayController>
                 <arrayController mode="entity" entityName="Transaction" automaticallyPreparesContent="YES" id="0Ph-DQ-cOp" userLabel="TransactionsArrayController" customClass="BelArtArrayController" customModule="BelArt" customModuleProvider="target">
                     <connections>
+                        <binding destination="JG0-En-9jf" name="contentSet" keyPath="selection.transactions" id="oI9-Ca-L6e">
+                            <dictionary key="options">
+                                <bool key="NSDeletesObjectsOnRemove" value="YES"/>
+                            </dictionary>
+                        </binding>
                         <binding destination="gbB-IS-z53" name="managedObjectContext" keyPath="managedObjectContext" id="q2O-l7-Vub"/>
-                        <binding destination="JG0-En-9jf" name="contentSet" keyPath="selection.transactions" id="oWz-oR-i5B"/>
                     </connections>
                 </arrayController>
                 <arrayController mode="entity" entityName="Fournisseur" automaticallyPreparesContent="YES" id="8MQ-La-eFP" userLabel="FournisseursArrayController">
@@ -3555,7 +3563,7 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Wn3-nc-pHn">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="Wn3-nc-pHn">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>

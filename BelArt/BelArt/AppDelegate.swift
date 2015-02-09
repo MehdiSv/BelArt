@@ -107,6 +107,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             var error: NSError? = nil
             if moc.hasChanges && !moc.save(&error) {
+                println(error?.description)
                 NSApplication.sharedApplication().presentError(error!)
             }
         }

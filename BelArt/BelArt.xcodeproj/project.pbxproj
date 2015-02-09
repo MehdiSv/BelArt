@@ -76,6 +76,7 @@
 		91861A451A83D9320068D261 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
 		918B57231A7C16BF00876D19 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
 		919E96891A81592B00C5A911 /* ComptesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComptesViewController.swift; path = Controllers/ComptesViewController.swift; sourceTree = "<group>"; };
+		91F929CB1A893A6500A3C00A /* BelArt 9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BelArt 9.xcdatamodel"; sourceTree = "<group>"; };
 		FBFB097F1A5C85E4004D4134 /* BelArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFB09831A5C85E4004D4134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBFB09841A5C85E4004D4134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -533,6 +534,7 @@
 		91861A421A83CE900068D261 /* BelArt.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				91F929CB1A893A6500A3C00A /* BelArt 9.xcdatamodel */,
 				915647EF1A8639B100B58DF3 /* BelArt 8.xcdatamodel */,
 				915647EC1A857E1B00B58DF3 /* BelArt 7.xcdatamodel */,
 				915647EB1A8554CC00B58DF3 /* BelArt 5.xcdatamodel */,
@@ -542,7 +544,7 @@
 				915647E21A85197F00B58DF3 /* BelArt 2.xcdatamodel */,
 				91861A431A83CE900068D261 /* BelArt 6.xcdatamodel */,
 			);
-			currentVersion = 915647EF1A8639B100B58DF3 /* BelArt 8.xcdatamodel */;
+			currentVersion = 91F929CB1A893A6500A3C00A /* BelArt 9.xcdatamodel */;
 			path = BelArt.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
