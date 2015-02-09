@@ -96,9 +96,16 @@ class StatisticsViewController: BelArtViewController {
         self.didChangeValueForKey("totalEffectiveValueSoldDuringPeriod")
     }
 
+    func setMinutesAndHoursToDate(minutes:Int, hours:Int, date:NSDate) -> NSDate {
+        return NSCalendar(calendarIdentifier: NSGregorianCalendar)!.dateBySettingHour(hours, minute: minutes, second: 0, ofDate: date, options: NSCalendarOptions())!
+    }
+    
     func calculateTransactionsValues() {
-        let predicate = NSPredicate(format: "dateEffet >= %@ && dateEffet <= %@", fromSellDate.dateValue, toSellDate.dateValue)
         
+        let startDate = setMinutesAndHoursToDate(0, hours: 0, date: fromSellDate.dateValue)
+        let endDate = setMinutesAndHoursToDate(59, hours: 23, date: toSellDate.dateValue)
+        
+        let predicate = NSPredicate(format: "(dateEffet >= %@) && (dateEffet <= %@)", startDate, endDate)
         transactionsAC.filterPredicate = predicate
         
         totalEffets = 0
