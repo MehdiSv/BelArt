@@ -1,5 +1,5 @@
 //
-//  DepensesViewController.swift
+//  OperationsViewController.swift
 //  BelArt
 //
 //  Created by Mehdi Sqalli on 05/02/15.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class DepensesViewController: BelArtViewController {
+class OperationsViewController: BelArtViewController {
     
     
     @IBOutlet weak var tableView: NSTableView!

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Achat" representedClassName="Achat" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="orRecu" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="orRemis" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="remise" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="total" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fournisseur" maxCount="1" deletionRule="Nullify" destinationEntity="Fournisseur" inverseName="achats" inverseEntity="Fournisseur" syncable="YES"/>
+        <relationship name="transactions" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="achat" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Article" representedClassName="Article" syncable="YES">
+        <attribute name="nom" attributeType="String" syncable="YES"/>
+        <attribute name="poids" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="prixAchat" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="prixGr" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="articles" inverseEntity="Category" syncable="YES"/>
+        <relationship name="fournisseur" maxCount="1" deletionRule="Nullify" destinationEntity="Fournisseur" inverseName="articles" inverseEntity="Fournisseur" syncable="YES"/>
+        <relationship name="vente" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Vente" inverseName="article" inverseEntity="Vente" syncable="YES"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="articles" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Article" inverseName="category" inverseEntity="Article" syncable="YES"/>
+    </entity>
+    <entity name="Client" representedClassName="Client" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nom" attributeType="String" syncable="YES"/>
+        <attribute name="prenom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reportDette" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="achats" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Vente" inverseName="client" inverseEntity="Vente" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="client" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Compte" representedClassName="Compte" syncable="YES">
+        <attribute name="nom" attributeType="String" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="compte" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Fournisseur" representedClassName="Fournisseur" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nom" attributeType="String" syncable="YES"/>
+        <attribute name="prenom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reportDette" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="achats" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Achat" inverseName="fournisseur" inverseEntity="Achat" syncable="YES"/>
+        <relationship name="articles" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Article" inverseName="fournisseur" inverseEntity="Article" syncable="YES"/>
+    </entity>
+    <entity name="Moyen" representedClassName="Moyen" syncable="YES">
+        <attribute name="moyen" attributeType="String" syncable="YES"/>
+        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="moyen" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateEffet" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isDepense" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="montant" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shopExpense" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <relationship name="achat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Achat" inverseName="transactions" inverseEntity="Achat" syncable="YES"/>
+        <relationship name="client" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="transactions" inverseEntity="Client" syncable="YES"/>
+        <relationship name="compte" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Compte" inverseName="transactions" inverseEntity="Compte" syncable="YES"/>
+        <relationship name="moyen" maxCount="1" deletionRule="Nullify" destinationEntity="Moyen" inverseName="transaction" inverseEntity="Moyen" syncable="YES"/>
+        <relationship name="vente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vente" inverseName="transactions" inverseEntity="Vente" syncable="YES"/>
+    </entity>
+    <entity name="Vente" representedClassName="Vente" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="montant" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="article" maxCount="1" deletionRule="Nullify" destinationEntity="Article" inverseName="vente" inverseEntity="Article" syncable="YES"/>
+        <relationship name="client" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="achats" inverseEntity="Client" syncable="YES"/>
+        <relationship name="transactions" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="vente" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Achat" positionX="-270" positionY="-288" width="128" height="148"/>
+        <element name="Article" positionX="-272" positionY="68" width="128" height="148"/>
+        <element name="Category" positionX="-261" positionY="242" width="128" height="73"/>
+        <element name="Client" positionX="106" positionY="135" width="128" height="148"/>
+        <element name="Compte" positionX="79" positionY="-234" width="128" height="73"/>
+        <element name="Fournisseur" positionX="-263" positionY="-108" width="128" height="148"/>
+        <element name="Moyen" positionX="-90" positionY="-243" width="128" height="73"/>
+        <element name="Transaction" positionX="88" positionY="-117" width="128" height="208"/>
+        <element name="Vente" positionX="-101" positionY="17" width="128" height="118"/>
+    </elements>
+</model>

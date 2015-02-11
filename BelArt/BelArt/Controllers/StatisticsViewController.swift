@@ -10,6 +10,7 @@ import Cocoa
 
 class StatisticsViewController: BelArtViewController {
     
+    @IBOutlet var depensesVersementsAC: NSArrayController!
     @IBOutlet var transactionsAC: NSArrayController!
     @IBOutlet var ventesAC: NSArrayController!
     @IBOutlet var articlesAC: NSArrayController!
@@ -26,6 +27,9 @@ class StatisticsViewController: BelArtViewController {
     var souadExpenses:Float = 0
     var restExpenses:Float = 0
     
+    var depenses:Float = 0
+    var versements:Float = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +40,11 @@ class StatisticsViewController: BelArtViewController {
         calculateSellValues()
         calculateTransactionsValues()
         calculateExpenses()
+        calculateDepensesVersements()
+    }
+    
+    func calculateDepensesVersements() {
+        println(depensesVersementsAC.arrangedObjects.count)
     }
     
     func calculateExpenses() {
@@ -51,6 +60,8 @@ class StatisticsViewController: BelArtViewController {
         self.willChangeValueForKey("shopExpenses")
         self.willChangeValueForKey("souadExpenses")
         self.willChangeValueForKey("restExpenses")
+        self.willChangeValueForKey("depenses")
+        self.willChangeValueForKey("versements")
         
         for transaction in transactionsAC.arrangedObjects as [Transaction] {
             
@@ -64,11 +75,26 @@ class StatisticsViewController: BelArtViewController {
                     restExpenses += transaction.montant.floatValue
                 }
             }
+            
+            println(transaction.isDepense)
+            
+            if transaction.isDepense == true {
+                depenses += transaction.montant.floatValue
+            } else {
+                versements += transaction.montant.floatValue
+            }
         }
+        
+        depenses -= (shopExpenses + souadExpenses + restExpenses)
+        
+        println(depenses)
+        println(versements)
         
         self.didChangeValueForKey("shopExpenses")
         self.didChangeValueForKey("souadExpenses")
         self.didChangeValueForKey("restExpenses")
+        self.didChangeValueForKey("depenses")
+        self.didChangeValueForKey("versements")
     }
     
     func calculateSellValues() {
@@ -123,12 +149,14 @@ class StatisticsViewController: BelArtViewController {
         calculateSellValues()
         calculateTransactionsValues()
         calculateExpenses()
+        calculateDepensesVersements()
     }
     
     @IBAction func toSellDateDone(sender: AnyObject) {
         calculateSellValues()
         calculateTransactionsValues()
         calculateExpenses()
+        calculateDepensesVersements()
     }
     
 }

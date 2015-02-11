@@ -2,7 +2,7 @@
 //  Transaction.swift
 //  BelArt
 //
-//  Created by Mehdi Sqalli on 06/02/15.
+//  Created by Mehdi Sqalli on 09/02/15.
 //  Copyright (c) 2015 Mehdi Sqalli. All rights reserved.
 //
 
@@ -12,16 +12,17 @@ import CoreData
 @objc(Transaction)
 class Transaction: NSManagedObject {
 
-    @NSManaged var date: NSDate?
+    @NSManaged var date: NSDate
     @NSManaged var dateEffet: NSDate
     @NSManaged var montant: NSNumber
     @NSManaged var nom: String?
     @NSManaged var shopExpense: NSNumber
-    @NSManaged var achat: Achat?
+    @NSManaged var isDepense: NSNumber
+    @NSManaged var achat: Achat
     @NSManaged var client: Client
     @NSManaged var compte: Compte
     @NSManaged var moyen: Moyen?
-    @NSManaged var vente: Vente?
+    @NSManaged var vente: Vente
 
     var price:NSNumber {
         get {
@@ -47,17 +48,21 @@ class Transaction: NSManagedObject {
         }
         return false
     }
-
+    
     class func keyPathsForValuesAffectingNameFilled() -> NSArray {
         return ["nom"]
     }
-
+    
     class func keyPathsForValuesAffectingHiddenEffet() -> NSArray {
         return ["moyen.moyen"]
     }
     
     class func keyPathsForValuesAffectingDateEffetAvailable() -> NSArray {
         return ["dateEffet", "moyen.moyen"]
+    }
+    
+    class func keyPathsForValuesAffectingType() -> NSArray {
+        return ["isDepense"]
     }
     
     var hiddenEffet: Bool {
@@ -89,6 +94,16 @@ class Transaction: NSManagedObject {
                 return countElements(name) > 0
             }
             return false
+        }
+    }
+
+    var type:String {
+        get {
+            if self.isDepense == true {
+                return "Dépense"
+            }
+            
+            return "Versement"
         }
     }
 }
